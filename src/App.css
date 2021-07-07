@@ -1,0 +1,14 @@
+.CenterDiv{
+  background-color: #DE9151;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+.CenterSvg{
+  height: 100%;
+  width: 100%;
+}
+input{
+  background-color: white;
+}
