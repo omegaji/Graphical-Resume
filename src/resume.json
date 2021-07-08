@@ -1,6 +1,8 @@
 [{  "id":"0",
     "name":"om",
-    "type":"user"
+    "type":"user",
+    "contents":["Aspiring wizard in Web Development and Data Science. I like to call myself a DataDev :D"],
+    "links":"https://github.com/omegaji"
 },
 {  "id":"1",
     "name":"Development",
@@ -14,7 +16,91 @@
 },
 {"id":"3",
 "name":"Vellore Institute of Technology",
-"type":"none"
+"type":"education",
+"cgpa":"8.82",
+"yearPassout":"2021"
+},
+{
+    "id":"4",
+    "type":"project",
+    "name":"projects",
+    "category":"ds"
+},
+{
+    "id":"5",
+    "type":"project",
+    "name":"COVID-19 Forecast",
+    "category":"ds",
+    "skillTag":["Python","Bokeh","Plotly","Pandas","Numpy","XGBoost"
+    ],
+    "contents":["I created a Covid 19 EDA on an old dataset provided by Kaggle. It was also used to forecast the fatality and cases.",
+    "Moreover, I performed country specific EDA(India)."],
+    "links":"https://www.kaggle.com/omegaji/covid-19-india-maps-eda-xgboost"
+},
+{
+    "id":"6",
+    "type":"project",
+    "name":"Udemy EDA",
+    "category":"ds",
+    "skillTag":["Python","Pandas","Numpy","Altair","Interactive Graphs"],
+    "contents":["Using the Udemy Course dataset, a lot of visualisations and data analysis has been done","I used Altair library to make interactive graphs and answered many datapoints arising from the dataset"],
+    "links":"https://www.kaggle.com/omegaji/udemy-eda"
+},
+{
+
+    "id":"7",
+    "type":"project",
+    "name":"Sentiment word extraction",
+    "category":"ds",
+    "skillTag":["Python","Pandas","Numpy","DistilBERT","QuestionAnswering","transformers"],
+    "contents":["The kaggle competiton to extract the words which provide sentiment to the tweet was an excellent test of transformers true power.","I used Altair library to make interactive graphs and answered many datapoints arising from the dataset"],
+    "links":"https://www.kaggle.com/omegaji/simple-easypeasy-distilbert-qa-d"
+
+
+},
+{
+
+    "id":"8",
+    "type":"project",
+    "name":"Revenue Forecast",
+    "category":"ds",
+    "skillTag":["Python","Pandas","Numpy","Timeseries","ARIMA","Exponential Smoothing","ADF tests"],
+    "contents":["Perfore time-series analysis of Quarterly revenue data of Telecom industries","Preprocessed and conducted stationary tests, as well as making the data stationary using Autocorrelation","Used ARIMA and Exponential smoothing models for final forecast"]
+
+
+},
+
+{
+
+    "id":"9",
+    "type":"project",
+    "name":"Reinforcement projects",
+    "category":"ds",
+    "skillTag":["Genetic algorithm","MinMax Algorithm","Javascript","Processing.js","Reinforcement learning"],
+    "contents":["Made unbeatable TicTacToe AI using javascript and minmax algorithm from scratch","Using p5.js and vanilla javascript created path finding rockets that learn to reach the goal by avoiding the obstacles using genetic algorithm"]
+
+
+},
+{
+
+    "id":"10",
+    "type":"project",
+    "name":"Bear classifier",
+    "category":"ds",
+    "skillTag":["CNN","Python","FastAI","Opencv2","BeautifulSoup","Scraping"],
+    "contents":["A classifier model for bear made using FastAI library built on Pytorch and a dataset scraped from google images","It used transfer learning on the CIFAR dataset for a quicker and accurate model."],
+    "links":"https://github.com/omegaji/teddy_grizzly_black-bear-classifier"
+
+},
+{
+
+    "id":"11",
+    "type":"project",
+    "name":"Rss Scraper",
+    "category":"ds",
+    "skillTag":["BeautifulSoup","Scraping","Python","Feedparser","Selenium"],
+    "contents":["First part of the project is that it will detect if the website has Feeds or Rss enabled.","The second part is to fetch all the working RSS links."],
+    "links":"https://github.com/omegaji/RssScrape"
 }
 
 

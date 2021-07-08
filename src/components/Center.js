@@ -51,6 +51,7 @@ export const CenterSvg=(props)=>{
                 .append("image")
                 .attr("href",process.env.PUBLIC_URL+'/images/star.svg')
                 .attr("class","stars")
+                .style("opacity","0")
 
     
     const ticked=()=>{
@@ -79,10 +80,10 @@ export const CenterSvg=(props)=>{
         let starttrans={"x":transform.x-(35/transform.k),"y":transform.y-(35/transform.k),"k":transform.k}
         console.log(transform)
         // console.log(starttrans)
-        transform.x=transform.x-65
-        transform.y=transform.y-65
+        transform.x=transform.x-70
+        transform.y=transform.y-69
         console.log(transform)
-        Stars.attr("transform",transform).attr("width",120/transform.k).attr("height",120/transform.k)
+        Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
         
     }
     zoom.on("zoom",zoomed)
