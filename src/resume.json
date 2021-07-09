@@ -52,7 +52,7 @@
     "type":"project",
     "name":"Sentiment word extraction",
     "category":"ds",
-    "skillTag":["Python","Pandas","Numpy","DistilBERT","QuestionAnswering","transformers"],
+    "skillTag":["Python","NLP","Pandas","Numpy","DistilBERT","QuestionAnswering","transformers"],
     "contents":["The kaggle competiton to extract the words which provide sentiment to the tweet was an excellent test of transformers true power.","I used Altair library to make interactive graphs and answered many datapoints arising from the dataset"],
     "links":"https://www.kaggle.com/omegaji/simple-easypeasy-distilbert-qa-d"
 
@@ -122,7 +122,7 @@
     "type":"work",
     "name":"NLP Grader",
     "category":"ds",
-    "skillTag":["Spacy","Gensim","Jaccard","Word2Vec","Doc2Vec","BERT","Python"],
+    "skillTag":["Spacy","NLP","Gensim","Jaccard","Word2Vec","Doc2Vec","BERT","Python"],
     "contents":["An Automatic NLP based Grader for marksheets of students(Science Stream).","We used a combination of Rulebased and Word embedding models for a better accuracy score. Moreover, we used different similarity measures such as Cosine,Jaccard,Euclidian and Manhattan to regress the optimal score."],
     "duration":["September 2019","November 2019"]
 
@@ -140,7 +140,7 @@
     "type":"work",
     "name":"AI Resume Parser",
     "category":"ds",
-    "skillTag":["Python","Flask","Pandas","NLTK","Spacy","Python","Plotly","HTML","CSS","Javascript"],
+    "skillTag":["Python","NLP","Flask","Pandas","NLTK","Spacy","Python","Plotly","HTML","CSS","Javascript"],
     "contents":["I was tasked to create Rule based unsupervised Resume parser, to segregate the resumes into skills,work experience,name,region,education and other filters which aided the HR of the company","The second half of the project was to create a Flask frontend for the HR in which the extracted portion of resumes would be stored in the form of a table decorated with CSS","The table would contain columns such as skills,education,name,contact,work experience,experience duration and other filters, which the HR could sort them according to his or her needs."],
     "duration":["June 2020","August 2020"]
 
@@ -173,5 +173,74 @@
     "type":"work",
     "name":"Twimbit",
     "category":"ds"
+},
+{
+
+    "id":"20",
+    "type":"work",
+    "name":"NLP Dashboard",
+    "category":"ds",
+    "skillTag":["Python","NLP","Dash","HTML","CSS","Gensim","BERT","Word2Vec","T5","Selenium","BeautifulSoup","Umap","TSNE","Pandas","Numpy"],
+    "contents":["Main objective was to create a NLP dashboard capabale of semantic search,summarizer and sentiment analysis on huge scraped text documents","Text documents were usually scraped from chrome tabs using a chrome extension","I am binded by privacy policy to tell more about the project, but the end goal was to aid research analysts and fasten their research output using State of the art NLP Techniques"],
+    "duration":["August 2020","May 2021"]
+
+},
+
+{
+
+    "id":"21",
+    "type":"work",
+    "name":"Telecom Forecast",
+    "category":"ds",
+    "skillTag":["Python","Statslearn","ARIMA","Exponential Smoothing","Altair","Pandas","Numpy"],
+    "contents":["Using a dataset provided by the research analysts of Telecom industries, forecast on Revenue and EBITDA was to be performed","Data was time series in nature hence the necessary preprocessing steps were performed"],
+    "duration":["August 2020","May 2021"]
+},
+{
+
+    "id":"22",
+    "type":"work",
+    "name":"Flow Project",
+    "category":"ds",
+    "skillTag":["Python","Superset","MySQL","Scraping","BeautifulSoup","Selenium",""],
+    "contents":["Scraping fianancial data from various sites and creating a pipeline using Apache superset with a team member","It offered full-blown interactive EDA and an automated monthly scraping componenet so that the financial data would stay updated"],
+    "duration":["August 2020","May 2021"]
+},
+{
+
+    "id":"23",
+    "type":"project",
+    "name":"Rainfall Prediction",
+    "category":"ds",
+    "skillTag":["Pandas","Flask","Python","HTML","CSS","D3.js","Keras","LSTM","Exponential Smoothing","ARIMA","Plotly","Regression","XGBoost"],
+    "contents":["My final capstone project. Data was provided by my professor containing Vellore Rainfall data from 2010 to 2019 of varius districts near Vellore.","It was pure time series data and required lots of preprocessing steps. Moreover data was sparse!(Vellore is really hot!)","Using a range of techniques in time series analysis, I was not able to get good results due to the sparse nature of the data and as its known that time series cannot be regressed so was forced to used LSTM.","LSTM did also not yield satisfiable results, hence came the idea to transform our data which can be regressable.","New features were generated(11 in total) accounting for the seasonality and sparsitiy of the data and was later regressed on. It achieved a good low MAE and was the final model used for the website."],
+    "links":"https://rain-forecast.herokuapp.com"
+},
+{
+    "id":"24",
+    "type":"none",
+    "category":"ds",
+    "links":"https://www.kaggle.com/omegaji"
+},
+{
+
+    "id":"25",
+    "type":"project",
+    "name":"Bot Detect",
+    "category":"ds",
+    "skillTag":["Pandas","User-agents","Altair"],
+    "contents":["Main goal of the dataset was to detect wether the user of a website is a bot or not with given unprocessed user agent strings","Moreover, I also performed EDA on finding which browsers,OS and devices are bots more likely to exist on."],
+    "links":"https://www.kaggle.com/omegaji/the-beginning-of-bots-detect-eda-and-new-csv"
+},
+
+{
+
+    "id":"26",
+    "type":"project",
+    "name":"Preprint Data",
+    "category":"ds",
+    "skillTag":["Pandas","NLTK","ScikitLearn","NLP","Altair"],
+    "contents":["Preprint research articles on Covid 19 from major insititutes was used as the dataset.","EDA was performed and many valid questions were answered such as what topics are trending on Covid research, what are the main research areas produced by universites and which universities were involved in publishing relevant and useful covid research"],
+    "links":"https://www.kaggle.com/omegaji/preprint-research-eda-with-altair"
 }
 ]
