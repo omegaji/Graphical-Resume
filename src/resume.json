@@ -31,7 +31,7 @@
     "type":"project",
     "name":"COVID-19 Forecast",
     "category":"ds",
-    "skillTag":["Python","Bokeh","Plotly","Pandas","Numpy","XGBoost"
+    "skillTag":["Python","Bokeh","Plotly","Seaborn","Pandas","Numpy","XGBoost"
     ],
     "contents":["I created a Covid 19 EDA on an old dataset provided by Kaggle. It was also used to forecast the fatality and cases.",
     "Moreover, I performed country specific EDA(India)."],
@@ -101,7 +101,77 @@
     "skillTag":["BeautifulSoup","Scraping","Python","Feedparser","Selenium"],
     "contents":["First part of the project is that it will detect if the website has Feeds or Rss enabled.","The second part is to fetch all the working RSS links."],
     "links":"https://github.com/omegaji/RssScrape"
+},
+{
+
+    "id":"12",
+    "type":"work",
+    "name":"work experience",
+    "category":"ds"
+},
+{
+
+    "id":"13",
+    "type":"work",
+    "name":"Atyantik Technologies",
+    "category":"ds"
+},
+{
+
+    "id":"14",
+    "type":"work",
+    "name":"NLP Grader",
+    "category":"ds",
+    "skillTag":["Spacy","Gensim","Jaccard","Word2Vec","Doc2Vec","BERT","Python"],
+    "contents":["An Automatic NLP based Grader for marksheets of students(Science Stream).","We used a combination of Rulebased and Word embedding models for a better accuracy score. Moreover, we used different similarity measures such as Cosine,Jaccard,Euclidian and Manhattan to regress the optimal score."],
+    "duration":["September 2019","November 2019"]
+
+},
+{
+
+    "id":"15",
+    "type":"work",
+    "name":"Amilcar Technologies",
+    "category":"ds"
+},
+{
+
+    "id":"16",
+    "type":"work",
+    "name":"AI Resume Parser",
+    "category":"ds",
+    "skillTag":["Python","Flask","Pandas","NLTK","Spacy","Python","Plotly","HTML","CSS","Javascript"],
+    "contents":["I was tasked to create Rule based unsupervised Resume parser, to segregate the resumes into skills,work experience,name,region,education and other filters which aided the HR of the company","The second half of the project was to create a Flask frontend for the HR in which the extracted portion of resumes would be stored in the form of a table decorated with CSS","The table would contain columns such as skills,education,name,contact,work experience,experience duration and other filters, which the HR could sort them according to his or her needs."],
+    "duration":["June 2020","August 2020"]
+
+},
+{
+
+    "id":"17",
+    "type":"work",
+    "name":"Revenue Prediction",
+    "category":"ds",
+    "skillTag":["Python","SQL","Pandas","Xgboost","Regression","ScikitLearn","Seaborn","Altair"],
+    "contents":["This was a small project of Revenue prediction of a customer for the year 2020.","Moreover, the SQL file was generated and extracted into CSV for further data exploration and analysis. A range of regression techniques were used and feature engineering the table was also performed."],
+    "duration":["June 2020","August 2020"]
+
+},
+{
+
+    "id":"18",
+    "type":"work",
+    "name":"Playstore Scraping",
+    "category":"ds",
+    "skillTag":["Python","BeautifulSoup","Selenium","Pandas","Classification","Regression","ScikitLearn","Altair"],
+    "contents":["This was a tricky project, as Playstore scraping of more than 40k apps was performed with use of 3rd party APK sites.","Playstore shows limited apps by default, hence using 3rd party APK sites which have Apps appearing on numbered pages, I was able to create a script to match Playstore data and APK data to scrape various features of the app(about 40 columns).","Moreover, I was asked to lead a 4 member team to scrape such huge data and create a script that had many fail-safes"],
+    "duration":["June 2020","August 2020"]
+
+},
+
+{
+    "id":"19",
+    "type":"work",
+    "name":"Twimbit",
+    "category":"ds"
 }
-
-
 ]
