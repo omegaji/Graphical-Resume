@@ -1,3 +1,6 @@
+html{
+font-size:12px ;
+}
 .CenterDiv{
   background-color: #DE9151;
   position: absolute;
@@ -9,6 +12,14 @@
   height: 100%;
   width: 100%;
 }
-input{
+.divSkill>input{
+  width: 25%;
+
   background-color: white;
+}
+.divSkill{
+  height: 10rem;
+  width: 25%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

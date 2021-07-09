@@ -26,8 +26,6 @@ export const CenterSvg=(props)=>{
     .style('stroke','none');
     var width = window.innerWidth
     var height =window.innerHeight
-    console.log(width)
-    console.log(height)
     var Links=svg.append("g")
         .attr("stroke", "#BBB8B2")
         .attr("class","links")
@@ -78,11 +76,9 @@ export const CenterSvg=(props)=>{
 
         Links.attr("transform",transform).attr("stroke-width",2/transform.k).attr("marker-end", "url(#triangle)")
         let starttrans={"x":transform.x-(35/transform.k),"y":transform.y-(35/transform.k),"k":transform.k}
-        console.log(transform)
         // console.log(starttrans)
         transform.x=transform.x-70
         transform.y=transform.y-69
-        console.log(transform)
         Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
         
     }

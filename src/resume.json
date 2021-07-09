@@ -242,5 +242,83 @@
     "skillTag":["Pandas","NLTK","ScikitLearn","NLP","Altair"],
     "contents":["Preprint research articles on Covid 19 from major insititutes was used as the dataset.","EDA was performed and many valid questions were answered such as what topics are trending on Covid research, what are the main research areas produced by universites and which universities were involved in publishing relevant and useful covid research"],
     "links":"https://www.kaggle.com/omegaji/preprint-research-eda-with-altair"
+},
+{
+
+    "id":"27",
+    "type":"work",
+    "name":"work experience",
+    "category":"dev"
+},
+{
+
+    "id":"28",
+    "type":"work",
+    "name":"RMInfonetwork",
+    "category":"dev"
+},
+{
+
+    "id":"29",
+    "type":"work",
+    "name":"NeoSmilesDentalCare",
+    "category":"dev",
+    "skillTag":["HTML","CSS","Javascript"],
+    "contents":["A website for a dentist in Bharuch was my first task in this strartup","It had a peculiar request of making the website more child freindly and fully animated in a cartoonish fashion, hence a lot of Javascript was used."],
+    "links":"https://github.com/omegaji/NEOSMILES_DENTAL_CARE-WEBSITE-INTERNSHIP-WORK-",
+    "duration":["May 2019","July 2019"]
+},
+{
+    "id":"30",
+    "type":"work",
+    "name":"Spantech Group",
+    "category":"dev",
+    "skillTag":["HTML","CSS","Javascript"],
+    "contents":["I was assigned a simple website to create for an important customer. It contained the normal website template made from HTML,CSS and Javascript"],
+    "links":"https://github.com/omegaji/SPANTECH_GROUP_WEBSITE-INTERNSHIP-PROJECT-",
+    "duration":["May 2019","July 2019"]
+},
+{
+
+    "id":"31",
+    "type":"work",
+    "name":"Twimbit",
+    "category":"dev"
+},
+{
+    "id":"32",
+    "type":"work",
+    "name":"Chrome Extension",
+    "category":"dev",
+    "skillTag":["HTML","CSS","D3.js","Javascript","Neo4J","Chrome Dev","Cypher","AdobeXD","MongoDB"],
+    "contents":["A chrome extension for tracking history and highlighted text in tabs.","Using a graph database Neo4j I stored the tabs in parent and child data structure which would then be used to visualise in a tree like structure using D3.js"],
+    "duration":["August 2020","May 2021"]
+},
+
+{
+    "id":"33",
+    "type":"project",
+    "name":"Indian Cuisine",
+    "category":"dev",
+    "skillTag":["HTML","CSS","PouchDB","Javascript","React.JS","AWS Lightsail","TMUX","Express","AdobeXD","Node"],
+    "contents":["Using the Indian cuisine Kaggle dataset I created a PouchDBERN stack website with PouchDB as the database","Its a site providing information about Indian cusisines and hosted on Amazon Lightsail, as it had a cheaper subscription. Do check the website out!"],
+    "links":"65.2.25.110:3000"
+},
+{
+    "id":"34",
+    "type":"project",
+    "name":"Alchemy Recyclers",
+    "category":"dev",
+    "skillTag":["AdobeXD","HTML","CSS","Javascript","React.JS"],
+    "contents":["A project I undertook myself for Alchemy Recyclers, who handle Ewaste recycling","Its a site focued on frontend and hosted using github pages"],
+    "links":"https://omegaji.github.io/alchemy-recyclers-app/"
+},
+{
+    "id":"35",
+    "type":"project",
+    "name":"Instagram Clone",
+    "category":"dev",
+    "skillTag":["HTML","CSS","Javascript","Node","Express","MongoDB","Node"],
+    "contents":["One of my first websites while doing a bootcamp, it was made with Express,Node and MongoDB with signup and login functionality"]
 }
 ]
