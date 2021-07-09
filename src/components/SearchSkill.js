@@ -22,7 +22,7 @@ export const SearchSkill=(props)=>{
     
     const [skillset,setSkillSet]=useState([...skills])
     console.log(skillset.length)
-    const [inputval,setInputVal]=useState("")
+    const [inputVal,setInputVal]=useState("")
     const changeDropdown=()=>{
         let searchTerm=document.getElementById("inputSkill").value
         skillset.forEach(element=>{
@@ -30,20 +30,34 @@ export const SearchSkill=(props)=>{
                 element.vis="block"
             }
             else{
-                console.log("nai hai bhai")
                 element.vis="none"}
         })
         setSkillSet([...skillset])
         // d3.selectAll(".itemSkill")
         //     .
     }
+    useEffect(()=>{
+        document.getElementById("inputSkill").value=inputVal
+        d3.selectAll(".stars").attr("display",(d)=>{
+            if(d.skillTag==undefined){return "none";}
+            if(d.skillTag){
+                for(let i=0;i<d.skillTag.length;i++){
+                    if( d.skillTag[i]==inputVal){
+                        return "block";
+                    }
+                }
+                return "none";
+            }
+        })
+    },[inputVal])
     return(
         <div className="divSkill">
+                            <div>hello there {inputVal}</div>
+
             <input id="inputSkill" type="text" onKeyUp={changeDropdown.bind(this)}></input>
                 {skillset.map(
                     item=>{
-                        console.log(item)
-                        return (<div className="itemSkill" style={{display:item.vis}}>{item.id}</div>)
+                        return (<div className="itemSkill" style={{display:item.vis}} onClick={event=>setInputVal(event.target.innerHTML)}>{item.id}</div>)
                     }
                 )}
         </div>

@@ -33,6 +33,13 @@ export const CenterSvg=(props)=>{
         .attr("marker-end", "url(#triangle)")
         .data(props.links)
         .join("line")
+    var Stars=svg.selectAll(".stars")
+        .data(props.nodes)
+        .enter()
+        .append("image")
+        .attr("href",process.env.PUBLIC_URL+'/images/flower.svg')
+        .attr("class","stars")
+        .attr("display","none")
     var Nodes=svg.selectAll(".nodes")
                 .data(props.nodes)
                 .enter()
@@ -43,13 +50,7 @@ export const CenterSvg=(props)=>{
                     else if(d.category=="dev") return "#E8D33F"
                 })
                 .attr("class","nodes")
-    var Stars=svg.selectAll(".stars")
-                .data(props.nodes)
-                .enter()
-                .append("image")
-                .attr("href",process.env.PUBLIC_URL+'/images/star.svg')
-                .attr("class","stars")
-                .style("opacity","0")
+    
 
     
     const ticked=()=>{
@@ -70,7 +71,7 @@ export const CenterSvg=(props)=>{
     }
     
     const zoomed=({transform})=>{
-        Nodes.attr("transform", transform).attr("r",35/transform.k);
+        Nodes.attr("transform", transform).attr("r",20/transform.k);
         Nodes.style("stroke-width",5/transform.k);
         Nodes.style("stroke","black")
 
@@ -78,7 +79,7 @@ export const CenterSvg=(props)=>{
         let starttrans={"x":transform.x-(35/transform.k),"y":transform.y-(35/transform.k),"k":transform.k}
         // console.log(starttrans)
         transform.x=transform.x-70
-        transform.y=transform.y-69
+        transform.y=transform.y-69//140 135
         Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
         
     }

@@ -23,3 +23,6 @@ font-size:12px ;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.divSkill>p{
+  background-color: red;
+}
