@@ -1,13 +1,16 @@
 import React, { useEffect,useRef } from 'react'
 import * as d3 from 'd3'
 import { reduce } from 'd3'
-
+var currentTransform;
+var Nodes;
+var Links;
 export const CenterSvg=(props)=>{
     const svgref=React.useRef("svg")
     const zoom = d3.zoom()
     useEffect(()=>{
     const svg=d3.select(svgref.current)
     svg.attr("class","CenterSvg")
+    svg.attr("id","CenterSvg")
     svg.attr("width","100%")
     svg.attr("height","100%")
     svg.append('defs').append('marker')
@@ -26,7 +29,7 @@ export const CenterSvg=(props)=>{
     .style('stroke','none');
     var width = window.innerWidth
     var height =window.innerHeight
-    var Links=svg.append("g")
+    Links=svg.append("g")
         .attr("stroke", "#BBB8B2")
         .attr("class","links")
         .selectAll("line")
@@ -40,7 +43,7 @@ export const CenterSvg=(props)=>{
         .attr("href",process.env.PUBLIC_URL+'/images/flower.svg')
         .attr("class","stars")
         .attr("display","none")
-    var Nodes=svg.selectAll(".nodes")
+    Nodes=svg.selectAll(".nodes")
                 .data(props.nodes)
                 .enter()
                 .append("circle")
@@ -74,17 +77,17 @@ export const CenterSvg=(props)=>{
         Nodes.attr("transform", transform).attr("r",20/transform.k);
         Nodes.style("stroke-width",5/transform.k);
         Nodes.style("stroke","black")
-
+        var ll=d3.selectAll(".links")
+        console.log(ll)
         Links.attr("transform",transform).attr("stroke-width",2/transform.k).attr("marker-end", "url(#triangle)")
-        let starttrans={"x":transform.x-(35/transform.k),"y":transform.y-(35/transform.k),"k":transform.k}
         // console.log(starttrans)
-        transform.x=transform.x-70
-        transform.y=transform.y-69//140 135
+        // transform.x=transform.x-70
+        // transform.y=transform.y-69//140 135
         Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
         
     }
     zoom.on("zoom",zoomed)
-    svg.call(zoom).call(zoom.transform, d3.zoomIdentity.translate(0,0)).on("dblclick.zoom", null);;
+    svg.call(zoom).call(zoom.transform, d3.zoomIdentity.translate(0,0))//.on("dblclick.zoom", null);;
     var simulation=d3.forceSimulation(props.nodes)
     .force("collide",d3.forceCollide(40))
     .force("charge", d3.forceManyBody().strength(-10))
@@ -95,7 +98,6 @@ export const CenterSvg=(props)=>{
     simulation.on("tick",ticked)
                 
     })
-    
 return (
     <div className="CenterDiv">
         <svg ref={svgref}/>
@@ -103,3 +105,4 @@ return (
     </div>
 )
 }
+export {currentTransform,Nodes,Links};
