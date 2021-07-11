@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
 html{
+
 font-size:12px ;
 }
 .CenterDiv{
@@ -25,4 +28,18 @@ font-size:12px ;
 }
 .divSkill>p{
   background-color: red;
+}
+#DivTitle{
+  position:absolute;
+  z-index: 5;
+}
+#DivTitle>p{
+  position: absolute;
+  font-family: 'Otomanopee One', sans-serif;
+  color: white;
+  background-color: #BC5D2E;
+  max-width: 10rem;
+  padding: 0.2rem;
+  border-radius: 6px;
+
 }

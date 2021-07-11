@@ -220,6 +220,7 @@
     "id":"24",
     "type":"none",
     "category":"ds",
+    "contents":["I have achieved the Kernel Experts rank in Kaggle.","I love Kaggle and I keep on using it as a grinding stone to polish my Data Science skills. Moreover, there is an abundance of datasets to play with and also create interesting websites so the end user can also make use of such datasets."],
     "links":"https://www.kaggle.com/omegaji"
 },
 {
@@ -261,7 +262,7 @@
 
     "id":"29",
     "type":"work",
-    "name":"NeoSmilesDentalCare",
+    "name":"Neo Smiles Dental",
     "category":"dev",
     "skillTag":["HTML","CSS","Javascript"],
     "contents":["A website for a dentist in Bharuch was my first task in this strartup","It had a peculiar request of making the website more child freindly and fully animated in a cartoonish fashion, hence a lot of Javascript was used."],

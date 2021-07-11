@@ -1,7 +1,7 @@
 import React, { useEffect,useRef, useState } from 'react'
 import * as d3 from 'd3'
 import { reduce, zoomTransform } from 'd3'
-import { currentTransform,Nodes,Links } from './Center'
+import { currentTransform,Nodes,Links,Stars,Titles} from './Center'
 export const SearchSkill=(props)=>{
     
     var skills=new Set([])
@@ -76,10 +76,24 @@ export const SearchSkill=(props)=>{
                 // console.log(L)
                 Links.attr("transform",transform).attr("stroke-width",2/3.3).attr("marker-end", "url(#triangle)")
                
-                // transform.x=transform.x-70
-                // transform.y=transform.y-69//140 135
-                // Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
-                
+                transform.x=transform.x-70
+                transform.y=transform.y-69// 140 135
+                Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
+                 
+                transform.x=transform.x+70
+                transform.y=transform.y+69
+                Titles.style("transform",(d)=>{
+         
+
+                    let finalx= transform.x+(d.x*transform.k)
+                    let finaly=(transform.k*d.y)+transform.y
+                    
+                    return "translate(" + (-1*d.x) +"px," +(-1*d.y)+ "px)"+"translate(" + finalx +"px," + finaly+ "px)"
+        
+                    
+                    // return "translate(" + transform.x +"px," + transform.y+ "px)"
+        
+                })
             }
             zoom.on("zoom",zoomed)
 
@@ -100,7 +114,9 @@ export const SearchSkill=(props)=>{
         <div className="divSkill">
                             <div>hello there {searchArr}</div>
 
-            <input id="inputSkill" type="text" onKeyUp={changeDropdown.bind(this)}></input><span><button onClick={event=>{if(searchIndex!=searchArr.length-1){updateSearchIndex(searchIndex+1)}}}>Next</button><span>{searchIndex+1}/{searchArr.length}</span></span>
+            <input id="inputSkill" type="text" onKeyUp={changeDropdown.bind(this)}></input>
+            <span><button onClick={event=>{if(searchIndex!=searchArr.length-1){updateSearchIndex(searchIndex+1)}}}>Next</button>
+            <span>{searchIndex+1}/{searchArr.length}</span></span>
 
                 {skillset.map(
                     item=>{
