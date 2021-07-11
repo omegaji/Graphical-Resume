@@ -1,6 +1,6 @@
 import React, { useEffect,useRef } from 'react'
 import * as d3 from 'd3'
-import { reduce } from 'd3'
+import { reduce, tree } from 'd3'
 var currentTransform;
 var Nodes;
 var Links;
@@ -33,41 +33,52 @@ export const CenterSvg=(props)=>{
     .style('stroke','none');
     var width = window.innerWidth
     var height =window.innerHeight
+    const root=d3.hierarchy(props.links)
+    // let link= d3.hierarchy(props.links).links()
+    const rootnodes=root.descendants()
+    console.log(rootnodes)
     Links=svg.append("g")
         .attr("stroke", "#BBB8B2")
         .attr("class","links")
         .selectAll("line")
         .attr("marker-end", "url(#triangle)")
-        .data(props.links)
+        .data(root.links())
         .join("line")
+    // Links=svg.append("g")
+    //     .attr("stroke", "#BBB8B2")
+    //     .attr("class","links")
+    //     .selectAll("line")
+    //     .attr("marker-end", "url(#triangle)")
+    //     .data(props.links)
+    //     .join("line")
     Stars=svg.selectAll(".stars")
-        .data(props.nodes)
+        .data(rootnodes)
         .enter()
         .append("image")
         .attr("href",process.env.PUBLIC_URL+'/images/splat.svg')
         .attr("class","stars")
         .attr("display","none")
     Nodes=svg.selectAll(".nodes")
-                .data(props.nodes)
+                .data(rootnodes)
                 .enter()
                 .append("circle")
                 .attr("fill",(d)=>{
-                    if (d.type=="user")return "#2E2E3A";
-                    if(d.category=="ds") return "#F34213";
-                    else if(d.category=="dev") return "#E8D33F"
+                    if (d.data.type=="user")return "#2E2E3A";
+                    if(d.data.category=="ds") return "#F34213";
+                    else if(d.data.category=="dev") return "#E8D33F"
                 })
                 .attr("class","nodes")
     Titles=div.selectAll(".titles")
-                .data(props.nodes)
+                .data(rootnodes)
                 .enter()
                 .append("p")
-                .text((d)=>d.name)
+                .text((d)=>d.data.name)
                 .attr("class","titles")
     
 
     const ticked=()=>{
         Links
-            .attr("x1", d => d.source.x)
+            .attr("x1", d => {return d.source.x})
             .attr("y1", d => d.source.y)
             .attr("x2", d => d.target.x)
             .attr("y2", d => d.target.y);
@@ -75,7 +86,7 @@ export const CenterSvg=(props)=>{
         Nodes.attr("cx",function(d){    
             return d.x  })
             .attr("cy",function(d){
-            return d.y})
+            return d.y  })
         Stars.attr("x",function(d){    
             return d.x  })
             .attr("y",function(d){
@@ -115,9 +126,7 @@ export const CenterSvg=(props)=>{
 
         })
         // Titles.style("transform-origin", "0 0");+hwidth-(hwidth*transform.k)+hheight-(hheight*transform.k)+
-        // console.log(starttrans)translate(" +(hwidth-(hwidth*transform.k))+"px," +(hheight-(hheight*transform.k))+ "px)"
-        // transform.x=transform.x-70
-        // transform.y=transform.y-69//140 135
+        
         transform.x=transform.x-70
         transform.y=transform.y-69// 140 135
         Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
@@ -131,13 +140,20 @@ export const CenterSvg=(props)=>{
     
     zoom.on("zoom",zoomed)
     svg.call(zoom).call(zoom.transform, d3.zoomIdentity.scale(1).translate(0,0))//.on("dblclick.zoom", null);;
-    var simulation=d3.forceSimulation(props.nodes)
-    .force("collide",d3.forceCollide(40))
-    .force("charge", d3.forceManyBody().strength(-10))
-    .force("link",d3.forceLink().links(props.links).id(function(d) {
+    var simulation=d3.forceSimulation(rootnodes)
+    // .force("collide",d3.forceCollide(70))
+    .force("charge", d3.forceManyBody().strength(d=>{
+        return -1000
+        if(d.data.name=="om"){
+            return -500;
+        }
+        else return -200
+    }))
+    .force("link",d3.forceLink().links(root.links()).id(d => d.id).distance(100).strength(1).id(function(d) {
             return d.id
-    }).distance(300).strength(1))
+    }))
     .force("center", d3.forceCenter(width/2, height/2 ))
+    
     simulation.on("tick",ticked)
                 
     })

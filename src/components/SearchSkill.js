@@ -49,10 +49,10 @@ export const SearchSkill=(props)=>{
         document.getElementById("inputSkill").value=inputVal
 
         d3.selectAll(".stars").attr("display",(d)=>{
-            if(d.skillTag==undefined){return "none";}
-            if(d.skillTag){
-                for(let i=0;i<d.skillTag.length;i++){
-                    if( d.skillTag[i]==inputVal){
+            if(d.data.skillTag==undefined){return "none";}
+            if(d.data.skillTag){
+                for(let i=0;i<d.data.skillTag.length;i++){
+                    if( d.data.skillTag[i]==inputVal){
                         temparr.push([d.x,d.y])
                         return "block";
                     }

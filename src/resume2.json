@@ -1,0 +1,350 @@
+{ 
+    "name":"om",
+    "type":"user",
+    "contents":["Aspiring wizard in Web Development and Data Science. I like to call myself a DataDev :D"],
+    "links":"https://github.com/omegaji",
+    "children":[
+        { 
+            "name":"Development",
+            "category":"dev",
+            "type":"none",
+            "children":[
+                {
+                    
+                    "type":"project",
+                    "name":"projects",
+                    "category":"dev",
+                    "children":[
+                        {
+                            "id":"33",
+                            "type":"project",
+                            "name":"Indian Cuisine",
+                            "category":"dev",
+                            "skillTag":["HTML","CSS","PouchDB","Javascript","React.JS","AWS Lightsail","TMUX","Express","AdobeXD","Node"],
+                            "contents":["Using the Indian cuisine Kaggle dataset I created a PouchDBERN stack website with PouchDB as the database","Its a site providing information about Indian cusisines and hosted on Amazon Lightsail, as it had a cheaper subscription. Do check the website out!"],
+                            "links":"65.2.25.110:3000"
+                        },
+                        {
+                            "id":"34",
+                            "type":"project",
+                            "name":"Alchemy Recyclers",
+                            "category":"dev",
+                            "skillTag":["AdobeXD","HTML","CSS","Javascript","React.JS"],
+                            "contents":["A project I undertook myself for Alchemy Recyclers, who handle Ewaste recycling","Its a site focued on frontend and hosted using github pages"],
+                            "links":"https://omegaji.github.io/alchemy-recyclers-app/"
+                        },
+                        {
+                            "id":"35",
+                            "type":"project",
+                            "name":"Instagram Clone",
+                            "category":"dev",
+                            "skillTag":["HTML","CSS","Javascript","Node","Express","MongoDB","Node"],
+                            "contents":["One of my first websites while doing a bootcamp, it was made with Express,Node and MongoDB with signup and login functionality"]
+                        }
+                    ]
+                },
+                {
+
+                    "id":"27",
+                    "type":"work",
+                    "name":"work experience",
+                    "category":"dev",
+                    "children":[
+                        {
+
+                            "id":"28",
+                            "type":"work",
+                            "name":"RMInfonetwork",
+                            "category":"dev",
+                            "children":[
+                                {
+
+                                    "id":"29",
+                                    "type":"work",
+                                    "name":"Neo Smiles Dental",
+                                    "category":"dev",
+                                    "skillTag":["HTML","CSS","Javascript"],
+                                    "contents":["A website for a dentist in Bharuch was my first task in this strartup","It had a peculiar request of making the website more child freindly and fully animated in a cartoonish fashion, hence a lot of Javascript was used."],
+                                    "links":"https://github.com/omegaji/NEOSMILES_DENTAL_CARE-WEBSITE-INTERNSHIP-WORK-",
+                                    "duration":["May 2019","July 2019"]
+                                },
+                                {
+                                    "id":"30",
+                                    "type":"work",
+                                    "name":"Spantech Group",
+                                    "category":"dev",
+                                    "skillTag":["HTML","CSS","Javascript"],
+                                    "contents":["I was assigned a simple website to create for an important customer. It contained the normal website template made from HTML,CSS and Javascript"],
+                                    "links":"https://github.com/omegaji/SPANTECH_GROUP_WEBSITE-INTERNSHIP-PROJECT-",
+                                    "duration":["May 2019","July 2019"]
+                                }
+                            ]
+                        },
+
+                        {
+
+                            "id":"31",
+                            "type":"work",
+                            "name":"Twimbit",
+                            "category":"dev",
+                            "children":[
+                                {
+                                    "id":"32",
+                                    "type":"work",
+                                    "name":"Chrome Extension",
+                                    "category":"dev",
+                                    "skillTag":["HTML","CSS","D3.js","Javascript","Neo4J","Chrome Dev","Cypher","AdobeXD","MongoDB"],
+                                    "contents":["A chrome extension for tracking history and highlighted text in tabs.","Using a graph database Neo4j I stored the tabs in parent and child data structure which would then be used to visualise in a tree like structure using D3.js"],
+                                    "duration":["August 2020","May 2021"]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        
+        },
+        {  
+            "name":"Data Science",
+            "category":"ds",
+            "type":"none",
+            "children":[
+                {
+                    "type":"project",
+                    "name":"projects",
+                    "category":"ds",
+                    "children":[
+                        {
+                            "id":"5",
+                            "type":"project",
+                            "name":"COVID-19 Forecast",
+                            "category":"ds",
+                            "skillTag":["Python","Bokeh","Plotly","Seaborn","Pandas","Numpy","XGBoost"
+                            ],
+                            "contents":["I created a Covid 19 EDA on an old dataset provided by Kaggle. It was also used to forecast the fatality and cases.",
+                            "Moreover, I performed country specific EDA(India)."],
+                            "links":"https://www.kaggle.com/omegaji/covid-19-india-maps-eda-xgboost"
+                        },
+                        {
+                            "id":"6",
+                            "type":"project",
+                            "name":"Udemy EDA",
+                            "category":"ds",
+                            "skillTag":["Python","Pandas","Numpy","Altair","Interactive Graphs"],
+                            "contents":["Using the Udemy Course dataset, a lot of visualisations and data analysis has been done","I used Altair library to make interactive graphs and answered many datapoints arising from the dataset"],
+                            "links":"https://www.kaggle.com/omegaji/udemy-eda"
+                        },
+                        {
+                        
+                            "id":"7",
+                            "type":"project",
+                            "name":"Sentiment word extraction",
+                            "category":"ds",
+                            "skillTag":["Python","NLP","Pandas","Numpy","DistilBERT","QuestionAnswering","transformers"],
+                            "contents":["The kaggle competiton to extract the words which provide sentiment to the tweet was an excellent test of transformers true power.","I used Altair library to make interactive graphs and answered many datapoints arising from the dataset"],
+                            "links":"https://www.kaggle.com/omegaji/simple-easypeasy-distilbert-qa-d"
+                        
+                        
+                        },
+                        {
+                        
+                            "id":"8",
+                            "type":"project",
+                            "name":"Revenue Forecast",
+                            "category":"ds",
+                            "skillTag":["Python","Pandas","Numpy","Timeseries","ARIMA","Exponential Smoothing","ADF tests"],
+                            "contents":["Perfore time-series analysis of Quarterly revenue data of Telecom industries","Preprocessed and conducted stationary tests, as well as making the data stationary using Autocorrelation","Used ARIMA and Exponential smoothing models for final forecast"]
+                        
+                        
+                        },
+                        
+                        {
+                        
+                            "id":"9",
+                            "type":"project",
+                            "name":"Reinforcement projects",
+                            "category":"ds",
+                            "skillTag":["Genetic algorithm","MinMax Algorithm","Javascript","Processing.js","Reinforcement learning"],
+                            "contents":["Made unbeatable TicTacToe AI using javascript and minmax algorithm from scratch","Using p5.js and vanilla javascript created path finding rockets that learn to reach the goal by avoiding the obstacles using genetic algorithm"]
+                        
+                        
+                        },
+                        {
+                        
+                            "id":"10",
+                            "type":"project",
+                            "name":"Bear classifier",
+                            "category":"ds",
+                            "skillTag":["CNN","Python","FastAI","Opencv2","BeautifulSoup","Scraping"],
+                            "contents":["A classifier model for bear made using FastAI library built on Pytorch and a dataset scraped from google images","It used transfer learning on the CIFAR dataset for a quicker and accurate model."],
+                            "links":"https://github.com/omegaji/teddy_grizzly_black-bear-classifier"
+                        
+                        },
+                        {
+                        
+                            "id":"11",
+                            "type":"project",
+                            "name":"Rss Scraper",
+                            "category":"ds",
+                            "skillTag":["BeautifulSoup","Scraping","Python","Feedparser","Selenium"],
+                            "contents":["First part of the project is that it will detect if the website has Feeds or Rss enabled.","The second part is to fetch all the working RSS links."],
+                            "links":"https://github.com/omegaji/RssScrape"
+                        },
+                        {
+
+                            "id":"23",
+                            "type":"project",
+                            "name":"Rainfall Prediction",
+                            "category":"ds",
+                            "skillTag":["Pandas","Flask","Python","HTML","CSS","D3.js","Keras","LSTM","Exponential Smoothing","ARIMA","Plotly","Regression","XGBoost"],
+                            "contents":["My final capstone project. Data was provided by my professor containing Vellore Rainfall data from 2010 to 2019 of varius districts near Vellore.","It was pure time series data and required lots of preprocessing steps. Moreover data was sparse!(Vellore is really hot!)","Using a range of techniques in time series analysis, I was not able to get good results due to the sparse nature of the data and as its known that time series cannot be regressed so was forced to used LSTM.","LSTM did also not yield satisfiable results, hence came the idea to transform our data which can be regressable.","New features were generated(11 in total) accounting for the seasonality and sparsitiy of the data and was later regressed on. It achieved a good low MAE and was the final model used for the website."],
+                            "links":"https://rain-forecast.herokuapp.com"
+                        },
+                        {
+
+                            "id":"25",
+                            "type":"project",
+                            "name":"Bot Detect",
+                            "category":"ds",
+                            "skillTag":["Pandas","User-agents","Altair"],
+                            "contents":["Main goal of the dataset was to detect wether the user of a website is a bot or not with given unprocessed user agent strings","Moreover, I also performed EDA on finding which browsers,OS and devices are bots more likely to exist on."],
+                            "links":"https://www.kaggle.com/omegaji/the-beginning-of-bots-detect-eda-and-new-csv"
+                        },
+                        
+                        {
+                        
+                            "id":"26",
+                            "type":"project",
+                            "name":"Preprint Data",
+                            "category":"ds",
+                            "skillTag":["Pandas","NLTK","ScikitLearn","NLP","Altair"],
+                            "contents":["Preprint research articles on Covid 19 from major insititutes was used as the dataset.","EDA was performed and many valid questions were answered such as what topics are trending on Covid research, what are the main research areas produced by universites and which universities were involved in publishing relevant and useful covid research"],
+                            "links":"https://www.kaggle.com/omegaji/preprint-research-eda-with-altair"
+                        }
+                    ]
+
+                },
+                {
+
+                    "id":"12",
+                    "type":"work",
+                    "name":"work experience",
+                    "category":"ds",
+                    "children":[
+                        {
+
+                            "id":"13",
+                            "type":"work",
+                            "name":"Atyantik Technologies",
+                            "category":"ds",
+                            "children":[
+                                {
+
+                                    "id":"14",
+                                    "type":"work",
+                                    "name":"NLP Grader",
+                                    "category":"ds",
+                                    "skillTag":["Spacy","NLP","Gensim","Jaccard","Word2Vec","Doc2Vec","BERT","Python"],
+                                    "contents":["An Automatic NLP based Grader for marksheets of students(Science Stream).","We used a combination of Rulebased and Word embedding models for a better accuracy score. Moreover, we used different similarity measures such as Cosine,Jaccard,Euclidian and Manhattan to regress the optimal score."],
+                                    "duration":["September 2019","November 2019"]
+                                
+                                }
+                            ]
+                        },
+                        {
+
+                            "id":"15",
+                            "type":"work",
+                            "name":"Amilcar Technologies",
+                            "category":"ds",
+                            "children":[
+                                {
+
+                                    "id":"16",
+                                    "type":"work",
+                                    "name":"AI Resume Parser",
+                                    "category":"ds",
+                                    "skillTag":["Python","NLP","Flask","Pandas","NLTK","Spacy","Python","Plotly","HTML","CSS","Javascript"],
+                                    "contents":["I was tasked to create Rule based unsupervised Resume parser, to segregate the resumes into skills,work experience,name,region,education and other filters which aided the HR of the company","The second half of the project was to create a Flask frontend for the HR in which the extracted portion of resumes would be stored in the form of a table decorated with CSS","The table would contain columns such as skills,education,name,contact,work experience,experience duration and other filters, which the HR could sort them according to his or her needs."],
+                                    "duration":["June 2020","August 2020"]
+                                
+                                },
+                                {
+                                
+                                    "id":"17",
+                                    "type":"work",
+                                    "name":"Revenue Prediction",
+                                    "category":"ds",
+                                    "skillTag":["Python","SQL","Pandas","Xgboost","Regression","ScikitLearn","Seaborn","Altair"],
+                                    "contents":["This was a small project of Revenue prediction of a customer for the year 2020.","Moreover, the SQL file was generated and extracted into CSV for further data exploration and analysis. A range of regression techniques were used and feature engineering the table was also performed."],
+                                    "duration":["June 2020","August 2020"]
+                                
+                                },
+                                {
+                                
+                                    "id":"18",
+                                    "type":"work",
+                                    "name":"Playstore Scraping",
+                                    "category":"ds",
+                                    "skillTag":["Python","BeautifulSoup","Selenium","Pandas","Classification","Regression","ScikitLearn","Altair"],
+                                    "contents":["This was a tricky project, as Playstore scraping of more than 40k apps was performed with use of 3rd party APK sites.","Playstore shows limited apps by default, hence using 3rd party APK sites which have Apps appearing on numbered pages, I was able to create a script to match Playstore data and APK data to scrape various features of the app(about 40 columns).","Moreover, I was asked to lead a 4 member team to scrape such huge data and create a script that had many fail-safes"],
+                                    "duration":["June 2020","August 2020"]
+                                
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id":"19",
+                            "type":"work",
+                            "name":"Twimbit",
+                            "category":"ds",
+                            "children":[
+                                {
+
+                                    "id":"20",
+                                    "type":"work",
+                                    "name":"NLP Dashboard",
+                                    "category":"ds",
+                                    "skillTag":["Python","NLP","Dash","HTML","CSS","Gensim","BERT","Word2Vec","T5","Selenium","BeautifulSoup","Umap","TSNE","Pandas","Numpy"],
+                                    "contents":["Main objective was to create a NLP dashboard capabale of semantic search,summarizer and sentiment analysis on huge scraped text documents","Text documents were usually scraped from chrome tabs using a chrome extension","I am binded by privacy policy to tell more about the project, but the end goal was to aid research analysts and fasten their research output using State of the art NLP Techniques"],
+                                    "duration":["August 2020","May 2021"]
+                                
+                                },
+                                
+                                {
+                                
+                                    "id":"21",
+                                    "type":"work",
+                                    "name":"Telecom Forecast",
+                                    "category":"ds",
+                                    "skillTag":["Python","Statslearn","ARIMA","Exponential Smoothing","Altair","Pandas","Numpy"],
+                                    "contents":["Using a dataset provided by the research analysts of Telecom industries, forecast on Revenue and EBITDA was to be performed","Data was time series in nature hence the necessary preprocessing steps were performed"],
+                                    "duration":["August 2020","May 2021"]
+                                },
+                                {
+                                
+                                    "id":"22",
+                                    "type":"work",
+                                    "name":"Flow Project",
+                                    "category":"ds",
+                                    "skillTag":["Python","Superset","MySQL","Scraping","BeautifulSoup","Selenium",""],
+                                    "contents":["Scraping fianancial data from various sites and creating a pipeline using Apache superset with a team member","It offered full-blown interactive EDA and an automated monthly scraping componenet so that the financial data would stay updated"],
+                                    "duration":["August 2020","May 2021"]
+                                }
+                            ]
+                        }
+
+                    ]
+                },
+                {   "name":"Kaggle",
+                    "id":"24",
+                    "type":"none",
+                    "category":"ds",
+                    "contents":["I have achieved the Kernel Experts rank in Kaggle.","I love Kaggle and I keep on using it as a grinding stone to polish my Data Science skills. Moreover, there is an abundance of datasets to play with and also create interesting websites so the end user can also make use of such datasets."],
+                    "links":"https://www.kaggle.com/omegaji"
+                }
+            ]
+        }
+    ]
+}

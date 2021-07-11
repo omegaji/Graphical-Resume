@@ -2,7 +2,7 @@ import './App.css';
 import {CenterSvg} from './components/Center'
 import { Left } from './components/Left';
 import nodes from "./resume.json"
-import links from "./resume_links.json"
+import links from "./resume2.json"
 import * as d3 from 'd3'
 
 // import {Test} from './components/Test'

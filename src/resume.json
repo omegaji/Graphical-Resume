@@ -216,7 +216,7 @@
     "contents":["My final capstone project. Data was provided by my professor containing Vellore Rainfall data from 2010 to 2019 of varius districts near Vellore.","It was pure time series data and required lots of preprocessing steps. Moreover data was sparse!(Vellore is really hot!)","Using a range of techniques in time series analysis, I was not able to get good results due to the sparse nature of the data and as its known that time series cannot be regressed so was forced to used LSTM.","LSTM did also not yield satisfiable results, hence came the idea to transform our data which can be regressable.","New features were generated(11 in total) accounting for the seasonality and sparsitiy of the data and was later regressed on. It achieved a good low MAE and was the final model used for the website."],
     "links":"https://rain-forecast.herokuapp.com"
 },
-{
+{   "name":"Kaggle",
     "id":"24",
     "type":"none",
     "category":"ds",
