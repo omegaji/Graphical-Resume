@@ -4,6 +4,13 @@
     "contents":["Aspiring wizard in Web Development and Data Science. I like to call myself a DataDev :D"],
     "links":"https://github.com/omegaji",
     "children":[
+        {"id":"3",
+            "name":"Vellore Institute of Technology",
+            "type":"education",
+            "cgpa":"8.82",
+            "yearPassout":"2021"
+            }
+        ,
         { 
             "name":"Development",
             "category":"dev",

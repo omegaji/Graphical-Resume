@@ -36,7 +36,6 @@ export const CenterSvg=(props)=>{
     const root=d3.hierarchy(props.links)
     // let link= d3.hierarchy(props.links).links()
     const rootnodes=root.descendants()
-    console.log(rootnodes)
     Links=svg.append("g")
         .attr("stroke", "#BBB8B2")
         .attr("class","links")
@@ -93,7 +92,7 @@ export const CenterSvg=(props)=>{
             return d.y})
         Titles.style("left",(d)=>{
             // return "0px"
-            return d.x+"px";
+            return d.x-15+"px";
         })
         Titles.style("top",(d)=>{
             // return "0px"
@@ -122,10 +121,8 @@ export const CenterSvg=(props)=>{
             return "translate(" + (-1*d.x) +"px," +(-1*d.y)+ "px)"+"translate(" + finalx +"px," + finaly+ "px)"
 
             
-            // return "translate(" + transform.x +"px," + transform.y+ "px)"
 
         })
-        // Titles.style("transform-origin", "0 0");+hwidth-(hwidth*transform.k)+hheight-(hheight*transform.k)+
         
         transform.x=transform.x-70
         transform.y=transform.y-69// 140 135
@@ -134,7 +131,6 @@ export const CenterSvg=(props)=>{
         transform.y=transform.y+69
        
 
-        // Titles.style("font-size",(1/transform.k)+"rem")
         
     }
     

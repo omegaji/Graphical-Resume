@@ -2,9 +2,9 @@ import React, { useEffect,useRef, useState } from 'react'
 import * as d3 from 'd3'
 import { reduce, zoomTransform } from 'd3'
 import { currentTransform,Nodes,Links,Stars,Titles} from './Center'
-export const SearchSkill=(props)=>{
+export const SearchWork=(props)=>{
     
-    var skills=new Set([])
+    var work=new Set([])
     var hash=new Set([])
     var temparr=[]
     var svg=d3.select("#CenterSvg")
@@ -13,25 +13,22 @@ export const SearchSkill=(props)=>{
     var hwidth = window.innerWidth/2
     var hheight =window.innerHeight/2
     props.nodes.forEach(element => {
-        if (element.skillTag!=undefined){
-            for(let i=0;i<element.skillTag.length;i++){
-                if (hash.has(element.skillTag[i])){
-                    continue;
-                }
-                skills.add({"id":element.skillTag[i],"vis":"block"})
-                hash.add(element.skillTag[i])
+        if (element.skillTag==undefined & element.type=="work" & element.name!="work experience") {
+            if(!hash.has(element.name)){
+                work.add({"id":element.name,"vis":"block"})
+                hash.add(element.name)
             }
-
+           
         }
     });
     
-    const [skillset,setSkillSet]=useState([...skills])
+    const [workset,setWorkSet]=useState([...work])
     const [zoomState]=useState(currentTransform)
     const [searchArr,updateSearchArr]=useState([])
     const [searchIndex,updateSearchIndex]=useState(0)
     const [inputVal,setInputVal]=useState("")
     const hideDropdown=(event)=>{
-        let dropdown=document.getElementsByClassName("skillDropdown")[0]
+        let dropdown=document.getElementsByClassName("skillDropdown")[1]
         let style=window.getComputedStyle(dropdown)
         let maxh=style.getPropertyValue("max-height")
         if(maxh=="0px"){
@@ -49,35 +46,35 @@ export const SearchSkill=(props)=>{
 
     }
     const changeDropdown=()=>{
-        document.getElementsByClassName("skillDropdown")[0].style.maxHeight="6rem"
+        document.getElementsByClassName("skillDropdown")[1].style.maxHeight="6rem"
         
-        let searchTerm=document.getElementById("inputSkill").value
+        let searchTerm=document.getElementById("inputWork").value
 
-        skillset.forEach(element=>{
+        workset.forEach(element=>{
             if(element.id.toLowerCase().includes(searchTerm.toLowerCase())){
                 element.vis="block"
             }
             else{
                 element.vis="none"}
         })
-        setSkillSet([...skillset])
+        setWorkSet([...workset])
         // d3.selectAll(".itemSkill")
         //     .
     }
     useEffect(()=>{
         temparr=[]
 
-        document.getElementById("inputSkill").value=inputVal
+        document.getElementById("inputWork").value=inputVal
 
         d3.selectAll(".stars").attr("display",(d)=>{
-            if(d.data.skillTag==undefined){return "none";}
-            if(d.data.skillTag){
-                for(let i=0;i<d.data.skillTag.length;i++){
-                    if( d.data.skillTag[i]==inputVal){
-                        temparr.push([d.x,d.y])
-                        return "block";
-                    }
+            if(d.data.skillTag!=undefined){return "none";}
+            if(d.data.skillTag==undefined){
+                if(d.data.name==inputVal){
+                    temparr.push([d.x,d.y])
+                    return "block"
+ 
                 }
+                
                 return "none";
             }
         })
@@ -128,17 +125,16 @@ export const SearchSkill=(props)=>{
         console.log(svg)
         svg.transition()
         .duration(750).call(zoom.transform, d3.zoomIdentity.translate((hwidth-xpoint*3.3),(hheight-ypoint*3.3)).scale(3.3));
-        console.log(zoom.transform)
         }
     },[searchArr,searchIndex])
-
+    console.log(workset)
     return(
         <div className="divSkill">
                             {/* <div>hello there {searchArr}</div> */}
             <div className="beforeInput">
             <div>
                 <div>
-                <input placeholder=" &#x1F50D; a skill" autofocus="autofocus"  id="inputSkill" type="text" onKeyUp={changeDropdown.bind(this)}></input>
+                <input placeholder=" &#x1F50D; a skill"   id="inputWork" type="text" onKeyUp={changeDropdown.bind(this)}></input>
 
                 <div>
                     <img src={process.env.PUBLIC_URL+"/images/drop.svg"} onClick={hideDropdown.bind(this)}></img>
@@ -147,7 +143,7 @@ export const SearchSkill=(props)=>{
                 </div>
                 <div className="Tag1">skills &#x2694;</div>
                 <div className="skillDropdown">
-                {skillset.map(
+                {workset.map(
                     item=>{
                         return (<div className="itemSkill" style={{display:item.vis}} onClick={event=>setInputVal(event.target.innerHTML)}>{item.id}</div>)
                     }
@@ -170,13 +166,5 @@ export const SearchSkill=(props)=>{
             </div> */}
         </div>
     )
-    return(
-        <select>
-                {skillset.map(
-                    item=>{
-                        return (<option value={item}>{item}</option>)
-                    }
-                )}
-        </select>
-    )
+  
 }

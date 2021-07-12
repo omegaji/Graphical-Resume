@@ -1,9 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 html{
 
 font-size:12px ;
+font-family: 'Otomanopee One', sans-serif;
+
 }
+@keyframes dropdown {
+  from{ max-height: 0rem;}
+  to{max-height: 6rem;}
+}
+@keyframes dropup {
+  from{ max-height: 6rem;}
+  to{max-height: 0rem;}
+}
+
+/* width */
+.skillDropdown::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.skillDropdown::-webkit-scrollbar-track {
+}
+
+/* Handle */
+.skillDropdown::-webkit-scrollbar-thumb {
+  background: #2E2E3A;
+  border-radius: 1px;
+}
+
+
 .CenterDiv{
   background-color: #DE9151;
   position: absolute;
@@ -15,31 +42,133 @@ font-size:12px ;
   height: 100%;
   width: 100%;
 }
-.divSkill>input{
-  width: 25%;
 
-  background-color: white;
+body{
+  overflow: hidden;
+}
+.Left{
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+
+  left: 10%;
+  background-color: #f45a2f86;
+  border: 5px solid #2E2E3A;
+  height: 50%;
+  border-radius: 6px;
+  
+  padding: 1rem;
 }
 .divSkill{
-  height: 10rem;
-  width: 25%;
+
+  max-height: 10rem;
+ opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+.beforeInput{
+
+  display: flex;
+  flex-direction: row;
+  margin-right: 1px;
+  justify-content: center;
+  align-items: baseline;
+
+
+}
+.beforeInput>div{
+  margin: 5px;
+  font-size: 1.3rem;
+
+  margin-bottom: 0px;
+}
+.skillDropdown{
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
+  animation-duration: 0.5s;
+  max-height: 0rem;
+
 }
-.divSkill>p{
-  background-color: red;
+.skillDropdown>div{
+  padding:0.2rem;
+  border-bottom: 3px solid;
+  border-color:#F6714D ;
+  background-color: white;
+  z-index: 3;
+}
+.beforeInput>div>div>input{
+  justify-self: stretch;
+  height: 2rem;
+  z-index:2;
+
+  background-color: white;
+  border-bottom:  3px solid #2E2E3A;
+  border-right:  3px solid #2E2E3A;}
+.beforeInput>div>div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.beforeInput>div>div:nth-child(1)>div{
+  background-color: white;
+  position:absolute;
+  z-index:2;
+
+  left: 85%;
+}
+.beforeInput>div>div:nth-child(1)>div>img{
+  width: 1.3rem;
+  display: block;
+  padding: 0.3rem;
+  margin:  auto 0;
+
+  padding-top: 0.7rem;
 }
 #DivTitle{
   position:absolute;
-  z-index: 5;
+  z-index: 1;
 }
 #DivTitle>p{
   position: absolute;
   font-family: 'Otomanopee One', sans-serif;
-  color: white;
+  color: #1C1C24;
   background-color: #BC5D2E;
   max-width: 10rem;
   padding: 0.2rem;
   border-radius: 6px;
+  font-size: 1rem;
+}
+.Next{
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  border:0px;
+  border-bottom:  3px solid #2E2E3A;
+  border-right:  3px solid #2E2E3A;
+
+
+}
+.Tag1{
+  position:absolute;
+  background-color: #BC5D2E;
+  padding: 0.3rem;
+  z-index:1;
+  top:10%;
+  padding-top:0.8rem;
+  border-bottom:  3px solid #2E2E3A;
+  border-right:  3px solid #2E2E3A;
+  border-left:  3px solid #2E2E3A;
+  border-radius: 3px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  color:white;
+
 
 }
