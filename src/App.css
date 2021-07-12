@@ -56,7 +56,7 @@ body{
   z-index: 0;
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
 }
 .Left{
@@ -70,7 +70,8 @@ body{
   background-color: #763A1D;
   /* background-color: #f45a2f86; */
   border: 5px solid #2E2E3A;
-  max-height: 28rem;
+  /* max-height: 28rem; */
+  height: 22rem;
   border-radius: 6px;
   width: 18rem;
   padding: 1rem;
@@ -234,11 +235,94 @@ body{
 
 }
 
+.BottomLeft{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top:20rem;
+  left:9rem;
+}
+.BottomLeft>div{
+  padding:0.3rem;
+  margin: 0.1rem;
+  margin-top:1rem;
+  border-radius: 0.7rem;
 
+}
+.itemSkill{
+  font-size:0.7rem;
+}
 
+/* RIBBON CSSS---------------------------------- */
 
+.ribbon{
 
+  position:relative;
+  display:flex;
+  left:1rem;
+  flex-direction:column;
+  
+  }
+  .rotate{
+  
+     transform: rotate(-90deg);
+  
+  
+    /* Legacy vendor prefixes that you probably don't need... */
+  
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+  
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+  }
+  
+  .rect{
+  
+  background-color:#F34213;
+  width:1.6rem;
+  height:6.1rem;
+  border-top-left-radius:0.3rem;
+  border-top-right-radius:0.3rem;
+  
+  }
+  .rect>p:nth-child(1){
+  position: relative;   
+  bottom:1rem; 
+  }
 
+  .rect>p:nth-child(2){
+    position: relative;   
+    top:0.6rem; 
+    font-size: 1.1rem;
+    }
+  .ribbottom{
+    position:relative;
+    display:flex;
+      width:1rem;
+      flex-direction:row;
+      padding:0px;
+    margin:0px
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    
+    border-top: 2rem solid #F34213;
+  }
+  .arrow-down2 {
+    width: 0; 
+    
+     height: 0; 
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    
+    border-top: 2rem solid #F34213;
+  }
+
+  /* RIBBON CSSS ENDDDDDDDDDDDDDDDD---------------- */
 @media only screen and (max-width: 600px) {
  html{
   font-size:9px ;
