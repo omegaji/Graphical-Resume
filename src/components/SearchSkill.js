@@ -9,17 +9,16 @@ export const SearchSkill=(props)=>{
     var temparr=[]
     var svg=d3.select("#CenterSvg")
     const zoom = d3.zoom()
-
     var hwidth = window.innerWidth/2
     var hheight =window.innerHeight/2
     props.nodes.forEach(element => {
-        if (element.skillTag!=undefined){
-            for(let i=0;i<element.skillTag.length;i++){
-                if (hash.has(element.skillTag[i])){
+        if (element.data.skillTag!=undefined){
+            for(let i=0;i<element.data.skillTag.length;i++){
+                if (hash.has(element.data.skillTag[i])){
                     continue;
                 }
-                skills.add({"id":element.skillTag[i],"vis":"block"})
-                hash.add(element.skillTag[i])
+                skills.add({"id":element.data.skillTag[i],"vis":"block"})
+                hash.add(element.data.skillTag[i])
             }
 
         }
@@ -137,7 +136,7 @@ export const SearchSkill=(props)=>{
                             {/* <div>hello there {searchArr}</div> */}
             <div className="beforeInput">
             <div>
-                <div>
+                <div className="afterInput">
                 <input placeholder=" &#x1F50D; a skill" autofocus="autofocus"  id="inputSkill" type="text" onKeyUp={changeDropdown.bind(this)}></input>
 
                 <div>
@@ -145,7 +144,7 @@ export const SearchSkill=(props)=>{
                 </div>
 
                 </div>
-                <div className="Tag1">skills &#x2694;</div>
+                <div id="Tag1">skills &#x2694;</div>
                 <div className="skillDropdown">
                 {skillset.map(
                     item=>{

@@ -147,7 +147,7 @@
                             "type":"project",
                             "name":"Sentiment word extraction",
                             "category":"ds",
-                            "skillTag":["Python","NLP","Pandas","Numpy","DistilBERT","QuestionAnswering","transformers"],
+                            "skillTag":["Python","NLP","Pandas","Numpy","BERT","Question Answering","transformers"],
                             "contents":["The kaggle competiton to extract the words which provide sentiment to the tweet was an excellent test of transformers true power.","I used Altair library to make interactive graphs and answered many datapoints arising from the dataset"],
                             "links":"https://www.kaggle.com/omegaji/simple-easypeasy-distilbert-qa-d"
                         

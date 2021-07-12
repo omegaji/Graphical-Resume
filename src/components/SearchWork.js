@@ -13,10 +13,10 @@ export const SearchWork=(props)=>{
     var hwidth = window.innerWidth/2
     var hheight =window.innerHeight/2
     props.nodes.forEach(element => {
-        if (element.skillTag==undefined & element.type=="work" & element.name!="work experience") {
+        if (element.data.skillTag==undefined & element.data.type=="work" & element.data.name!="work experience") {
             if(!hash.has(element.name)){
-                work.add({"id":element.name,"vis":"block"})
-                hash.add(element.name)
+                work.add({"id":element.data.name,"vis":"block"})
+                hash.add(element.data.name)
             }
            
         }
@@ -133,15 +133,15 @@ export const SearchWork=(props)=>{
                             {/* <div>hello there {searchArr}</div> */}
             <div className="beforeInput">
             <div>
-                <div>
-                <input placeholder=" &#x1F50D; a skill"   id="inputWork" type="text" onKeyUp={changeDropdown.bind(this)}></input>
+                <div className="afterInput">
+                <input placeholder=" &#x1F50D; an experience"   id="inputWork" type="text" onKeyUp={changeDropdown.bind(this)}></input>
 
                 <div>
                     <img src={process.env.PUBLIC_URL+"/images/drop.svg"} onClick={hideDropdown.bind(this)}></img>
                 </div>
 
                 </div>
-                <div className="Tag1">skills &#x2694;</div>
+                <div id="Tag2">work &#x1F4BC;</div>
                 <div className="skillDropdown">
                 {workset.map(
                     item=>{

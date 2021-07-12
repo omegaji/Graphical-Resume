@@ -33,6 +33,7 @@ export const CenterSvg=(props)=>{
     .style('stroke','none');
     var width = window.innerWidth
     var height =window.innerHeight
+    console.log(width)
     const root=d3.hierarchy(props.links)
     // let link= d3.hierarchy(props.links).links()
     const rootnodes=root.descendants()
