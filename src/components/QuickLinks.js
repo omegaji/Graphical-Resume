@@ -10,14 +10,14 @@ export const QuickLinks=()=>{
 
             <div className="QuickLinksLinks">
             <div >
-            <i class="fab fa-linkedin fa-2x"></i>
+            <a href="https://www.linkedin.com/in/om-purohit-957187175/"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
             <div>
-            <i class="fab fa-github fa-2x"></i>
+            <a href="https://github.com/omegaji"><i class="fab fa-github fa-2x"></i></a>
             </div>
 
             <div>
-            <i class="fab fa-kaggle fa-2x"></i>
+            <a href="https://www.kaggle.com/omegaji"> <i class="fab fa-kaggle fa-2x"></i></a>
             </div>
             </div>
 

@@ -343,20 +343,25 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top:15rem;
-    left:5rem;
-    background-color: white;
-    width:10rem;
-    justify-content: baseline;
+    top: 17rem;
+    left: 3rem;
+    background-color: #BE6924;
+    width: 14rem;
+    border: 3px solid #2E2E3A;
+    justify-content: center;
     align-items: center;
   }
 
  .QuickLinksTitle{
    position:absolute;
-   bottom: 0.3rem;
-   background-color: #763A1D;
-   border: 1px solid black;
-  
+   bottom: 4.3rem;
+
+   background-color: #F34213;
+   padding-left: 1rem;
+   padding-right: 1rem;  
+   border:3px solid #2E2E3A;
+   border-radius: 5px;
+   color: black;
  }
  .QuickLinksTitle>p{
   padding: 0rem;
@@ -368,7 +373,20 @@ body{
     
   }
   .QuickLinksLinks>div{
-    margin-top:2rem;
+    margin-top:1rem;
+    padding-top:0.5rem;
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .QuickLinksLinks>div:nth-child(1)>a>i{
+    color:#0a66c2;
+  }
+  .QuickLinksLinks>div:nth-child(2)>a>i{
+    color:black;
+  }
+  .QuickLinksLinks>div:nth-child(3)>a>i{
+    color:rgb(121, 217 ,255) 
   }
   /* Quick Links CSS END___________________________________________ */
 @media only screen and (max-width: 600px) {
