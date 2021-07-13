@@ -14,7 +14,7 @@ export const SearchWork=(props)=>{
     var hheight =window.innerHeight/2
     props.nodes.forEach(element => {
         if (element.data.skillTag==undefined & element.data.type=="work" & element.data.name!="work experience") {
-            if(!hash.has(element.name)){
+            if(!hash.has(element.data.name)){
                 work.add({"id":element.data.name,"vis":"block"})
                 hash.add(element.data.name)
             }

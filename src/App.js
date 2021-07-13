@@ -11,7 +11,6 @@ import * as d3 from 'd3'
 const zoom = d3.zoom()
 const root=d3.hierarchy(links)
 const nodes=root.descendants()
-console.log(root)
 function App() {
   return (
     <div className="App">

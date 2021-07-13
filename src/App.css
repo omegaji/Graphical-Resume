@@ -140,13 +140,15 @@ body{
 
 }
 .beforeInput>div>div>input{
-  justify-self: stretch;
   height: 2rem;
   z-index:2;
-  width: 100%;
+  width: 11rem;
+  font-size: 0.8rem;
   background-color: white;
   border-bottom:  3px solid #2E2E3A;
-  border-right:  3px solid #2E2E3A;}
+  border-right:  3px solid #2E2E3A;
+
+}
 
 
 .afterInput{
@@ -235,14 +237,14 @@ body{
 
 }
 
-.BottomLeft{
+.BottomRight{
   display: flex;
   flex-direction: row;
   position: absolute;
   top:20rem;
   left:9rem;
 }
-.BottomLeft>div{
+.BottomRight>div{
   padding:0.3rem;
   margin: 0.1rem;
   margin-top:1rem;
@@ -322,7 +324,53 @@ body{
     border-top: 2rem solid #F34213;
   }
 
+
+
+
   /* RIBBON CSSS ENDDDDDDDDDDDDDDDD---------------- */
+
+
+
+
+
+
+
+
+  /* Quick Links CSS------------------------------------------- */
+
+
+  .QuickLinks{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:15rem;
+    left:5rem;
+    background-color: white;
+    width:10rem;
+    justify-content: baseline;
+    align-items: center;
+  }
+
+ .QuickLinksTitle{
+   position:absolute;
+   bottom: 0.3rem;
+   background-color: #763A1D;
+   border: 1px solid black;
+  
+ }
+ .QuickLinksTitle>p{
+  padding: 0rem;
+  margin:0rem;
+ }
+  .QuickLinksLinks{
+    display: flex;
+    flex-direction: row ;
+    
+  }
+  .QuickLinksLinks>div{
+    margin-top:2rem;
+  }
+  /* Quick Links CSS END___________________________________________ */
 @media only screen and (max-width: 600px) {
  html{
   font-size:9px ;

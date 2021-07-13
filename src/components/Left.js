@@ -4,12 +4,14 @@ import { reduce } from 'd3'
 import { SearchSkill } from './SearchSkill'
 import { SearchWork } from './SearchWork'
 import { Test } from './Test'
+import { QuickLinks } from './QuickLinks'
 export const Left=(props)=>{
     return(
         <div className="Left">
             <SearchSkill nodes={props.nodes}/>
             <SearchWork nodes={props.nodes}/>
-            <div className="BottomLeft">
+            <QuickLinks/>
+            <div className="BottomRight">
             <div className="ribbon">
                 <div className="rect" > <p className="rotate">&#x1F50D;</p><p className="rotate">Search</p> </div>
                 <div className="ribbottom">
