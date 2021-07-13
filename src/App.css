@@ -82,7 +82,8 @@ body{
   top: 10%;
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
+  justify-content: flex-start;
   right: 1rem;
   background-color: #ffedc8;
   border: 5px solid #2E2E3A;

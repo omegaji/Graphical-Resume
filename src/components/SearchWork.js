@@ -119,15 +119,12 @@ export const SearchWork=(props)=>{
 
 
 
-        console.log(searchArr)
         let xpoint=searchArr[searchIndex][0]
         let ypoint=searchArr[searchIndex][1]
-        console.log(svg)
         svg.transition()
         .duration(750).call(zoom.transform, d3.zoomIdentity.translate((hwidth-xpoint*3.3),(hheight-ypoint*3.3)).scale(3.3));
         }
     },[searchArr,searchIndex])
-    console.log(workset)
     return(
         <div className="divSkill">
                             {/* <div>hello there {searchArr}</div> */}
@@ -141,7 +138,7 @@ export const SearchWork=(props)=>{
                 </div>
 
                 </div>
-                <div id="Tag2">work &#x1F4BC;</div>
+                <div id="Tag2">work &#x1F3E2;</div>
                 <div className="skillDropdown">
                 {workset.map(
                     item=>{
