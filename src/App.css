@@ -23,6 +23,10 @@ body{
 .skillDropdown::-webkit-scrollbar {
   width: 10px;
 }
+.ContentsBox::-webkit-scrollbar{
+  background:transparent;
+
+}
 
 /* Track */
 .skillDropdown::-webkit-scrollbar-track {
@@ -34,6 +38,10 @@ body{
   border-radius: 1px;
 }
 
+.ContentsBox::-webkit-scrollbar-thumb {
+  background: #2E2E3A;
+  border-radius: 1px;
+}
 
 .CenterDiv{
   background-color: #DE9151;
@@ -62,12 +70,12 @@ body{
 .Left{
   position: absolute;
   z-index: 2;
-  top: 10%;
+  top: 20%;
   display: flex;
   flex-direction: column;
 
   left: 1rem;
-  background-color: #763A1D;
+  background-color: #763b1dc7;
   /* background-color: #f45a2f86; */
   border: 5px solid #2E2E3A;
   /* max-height: 28rem; */
@@ -87,7 +95,7 @@ body{
   right: 1rem;
   background-color: #ffedc8;
   border: 5px solid #2E2E3A;
-  height: 50%;
+  /* height: 50%; */
   border-radius: 6px;
   width: 15rem;
   padding: 1rem;
@@ -419,7 +427,7 @@ body{
 }
 .Duration{
   font-size:0.8rem;
-  background-color: #2E2E3A;
+  background-color: #763b1dc7;
   color:white;
   border-radius: 7px;
   margin:0 auto;
@@ -448,14 +456,26 @@ body{
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  max-height: 30rem;
+  max-height: 12rem;
+  margin-top: 0.1rem;
+  scrollbar-width: none;
 }
+.ContentsBoxTitle{
+  margin-top: 0.8rem;
+    /* background-color: #763b1dc7; */
+    color: #2E2E3A;
+    border-top: 3px solid #2E2E3A;
+    border-bottom: 3px solid #2E2E3A;
+
+}
+
 .Contents{
   font-size: 0.8rem;
   padding:0.3rem;
   background-color: #DDDCD9;
   color:#2E2E3A;
   margin:0.2rem;
+
 
 }
 
@@ -466,3 +486,10 @@ body{
   font-size:9px ;
   font-family: 'Otomanopee One', sans-serif;  }
 }
+
+
+@media only screen and (max-width: 400px) {
+  html{
+   font-size:7px ;
+   font-family: 'Otomanopee One', sans-serif;  }
+ }

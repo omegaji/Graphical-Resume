@@ -59,13 +59,20 @@ export const Right=(props)=>{
         }
         else{
             return(
+                <React.Fragment>
+                <div className="ContentsBoxTitle">&#x1F916;Description</div>
                 <div className="ContentsBox">
+                    
                     {contents.map(element => {
-                        return(<div className="Contents">{element}</div>)
+                        return(
+                        <div className="Contents">{element}</div>
+                        
+                        )
                     })
                     }
 
                 </div>
+                </React.Fragment>
             )
         }
     }
