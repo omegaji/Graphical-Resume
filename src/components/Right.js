@@ -9,15 +9,76 @@ export const Right=(props)=>{
     const [educationArray,updateEducationArray]=useState([])
     const [type,updateType]=useState("")
     const [contents,updateContents]=useState([])
-    const [duration,updateDuration]=useState("")
+    const [duration,updateDuration]=useState([])
+
+
+    const checkDuration=()=>{
+        if(duration.length==0){
+            return 
+        }
+        else{
+            return (<div className="Duration">&#x23F3;{duration[0]+'-'+duration[1]}</div>)
+        }
+        
+    }
+    const checkUrl=()=>{
+        if(url==""){
+            return 
+        }
+        else{
+            return (<div className="Url">{url}</div>)
+        }
+    }
+    const checkEducationArray=()=>{
+        if(educationArray.length==0){
+            return
+        }
+        else{
+            return(
+                <React.Fragment>
+                <div className="CGPA">{educationArray[0]}</div>
+                <div className="yearPassout">{educationArray[1]}</div>
+                </React.Fragment>
+            )
+        }
+    }
+    const checkSkillTags=()=>{
+        if(skillTags.length==0){return}
+        else{
+            return(
+            <div className="skillTags"> 
+               { skillTags.map(item=>{
+                    return(<div className="skillTagItem">{item}</div>)
+                })}
+            </div>)
+        }
+    }
+    const checkContents=()=>{
+        if(contents.length==0){
+            return
+        }
+        else{
+            return(
+                <div className="ContentsBox">
+                    {contents.map(element => {
+                        return(<div className="Contents">{element}</div>)
+                    })
+                    }
+
+                </div>
+            )
+        }
+    }
     useEffect(()=>{
         Nodes.on("click",(i,d)=>{
             updateName(d.data.name)
             updateType(d.data.type)
-            if(d.data.skillTags){
-                updateSkillTags([...d.data.skillTags])
+            if(d.data.skillTag){
+                console.log("yes they exist")
+                updateSkillTags([...d.data.skillTag])
             }
             else{
+                console.log("no they donext")
                 updateSkillTags([])
             }
             if(d.data.type=="education"){
@@ -46,14 +107,25 @@ export const Right=(props)=>{
             }
 
         })
-    })
+    },[name,duration,type,url,contents,educationArray,skillTags])
     return(
         <div className="Right">
-         
-            <div>
-               {name}
+            <div className="Name">
+            &#x1F4DC;	{name}
             </div>
-            
+            <div className="beforeDuration">
+            { checkDuration() }
+            </div>
+            {checkSkillTags()}
+            {checkContents()  }
+
+            <div> 
+            {checkEducationArray}
+
+
+            </div>
+            { checkUrl() }
+
         </div>
     )
 }

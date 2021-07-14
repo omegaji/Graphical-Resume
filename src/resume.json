@@ -114,7 +114,9 @@
     "id":"13",
     "type":"work",
     "name":"Atyantik Technologies",
-    "category":"ds"
+    "category":"ds",
+    "duration":["September 2019","November 2019"]
+
 },
 {
 
@@ -132,7 +134,9 @@
     "id":"15",
     "type":"work",
     "name":"Amilcar Technologies",
-    "category":"ds"
+    "category":"ds",
+    "duration":["June 2020","August 2020"]
+
 },
 {
 
@@ -172,7 +176,9 @@
     "id":"19",
     "type":"work",
     "name":"Twimbit",
-    "category":"ds"
+    "category":"ds",
+    "duration":["August 2020","May 2021"]
+
 },
 {
 
@@ -256,7 +262,9 @@
     "id":"28",
     "type":"work",
     "name":"RMInfonetwork",
-    "category":"dev"
+    "category":"dev",
+    "duration":["May 2019","July 2019"]
+
 },
 {
 
@@ -284,7 +292,9 @@
     "id":"31",
     "type":"work",
     "name":"Twimbit",
-    "category":"dev"
+    "category":"dev",
+    "duration":["August 2020","May 2021"]
+
 },
 {
     "id":"32",
