@@ -27,6 +27,25 @@ export const SearchWork=(props)=>{
     const [searchArr,updateSearchArr]=useState([])
     const [searchIndex,updateSearchIndex]=useState(0)
     const [inputVal,setInputVal]=useState("")
+    const NextCount = ()=>{
+        console.log("IN NEXT COUNTTTTTTTTTTTTTTT")
+        let element=document.getElementById("WorkNextCount")
+
+        if(searchArr.length==0){
+            console.log(searchArr)
+            console.log("IN FIRST IF")
+            element.style.opacity=0
+            return false
+        }
+        else{
+
+            console.log("IN SECOND IFFFFFFFFFFFFf")
+            element.style.opacity=1;
+            return true;
+
+        }
+        
+    }
     const hideDropdown=(event)=>{
         let dropdown=document.getElementsByClassName("skillDropdown")[1]
         let style=window.getComputedStyle(dropdown)
@@ -79,9 +98,12 @@ export const SearchWork=(props)=>{
             }
         })
         updateSearchArr([...temparr])
+
         updateSearchIndex(0)
     },[inputVal])
     useEffect(()=>{
+        NextCount()
+
         if (searchArr.length!=0){
             // let Nodes=d3.selectAll(".nodes")
             // let Links=d3.selectAll(".links")
@@ -149,8 +171,8 @@ export const SearchWork=(props)=>{
             </div>
             
             </div>
-            <div><button className="Next"onClick={event=>{if(searchIndex!=searchArr.length-1){updateSearchIndex(searchIndex+1)}}}>Next</button>
-            <div>{searchIndex+1}/{searchArr.length}</div></div>
+            <div><button className="Next"onClick={event=>{if(searchIndex!=searchArr.length-1 ){updateSearchIndex(searchIndex+1)}}}>Next</button>
+            <div id="WorkNextCount">{searchIndex+1}/{searchArr.length}</div></div>
             </div>
 
             {/* <div className="skillDropdown">

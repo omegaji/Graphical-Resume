@@ -68,6 +68,8 @@ export const CenterSvg=(props)=>{
                     else if(d.data.category=="dev") return "#E8D33F"
                 })
                 .attr("class","nodes")
+
+
     Titles=div.selectAll(".titles")
                 .data(rootnodes)
                 .enter()
@@ -87,6 +89,7 @@ export const CenterSvg=(props)=>{
             return d.x  })
             .attr("cy",function(d){
             return d.y  })
+
         Stars.attr("x",function(d){    
             return d.x  })
             .attr("y",function(d){
@@ -127,6 +130,7 @@ export const CenterSvg=(props)=>{
         
         transform.x=transform.x-70
         transform.y=transform.y-69// 140 135
+
         Stars.attr("transform",transform).attr("width",140/transform.k).attr("height",135/transform.k)
         transform.x=transform.x+70
         transform.y=transform.y+69

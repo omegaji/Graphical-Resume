@@ -18,6 +18,14 @@ body{
   to{max-height: 0rem;}
 }
 
+@keyframes slideLeft {
+  from{
+    right:-19rem;
+  }
+  to{
+    right:1rem;
+  }
+}
 
 /* width */
 .skillDropdown::-webkit-scrollbar {
@@ -42,7 +50,12 @@ body{
   background: #2E2E3A;
   border-radius: 1px;
 }
-
+.Header{
+  position:absolute;
+  left:1rem;
+  top:1rem;
+  z-index: 3;
+}
 .CenterDiv{
   background-color: #DE9151;
   position: absolute;
@@ -92,13 +105,15 @@ body{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  right: 1rem;
+  right: -19rem;
   background-color: #ffedc8;
   border: 5px solid #2E2E3A;
   /* height: 50%; */
   border-radius: 6px;
   width: 15rem;
   padding: 1rem;
+  animation-duration: 0.5s;
+
 
 }
 .divSkill{
@@ -202,10 +217,22 @@ body{
   font-size: 1.5rem;
   border-radius: 3px;
   border:0px;
+  color:#2E2E3A;
   border-bottom:  3px solid #2E2E3A;
   border-right:  3px solid #2E2E3A;
 
 
+}
+.Next:hover{
+  /* background-color: ; */
+  background-color: #de9151ab;
+
+}
+#WorkNextCount{
+  opacity: 0;
+}
+#SkillNextCount{
+  opacity: 0;
 }
 #Tag1{
   position:absolute;
@@ -478,18 +505,48 @@ body{
 
 
 }
-
+.Url{
+  background-color: #763b1dc7;
+  margin-top:0.5rem;
+  padding:0.3rem;
+  border-radius: 4px;
+}
+.Url>a{
+text-decoration: none;}
 /* Right Side End_______________________________________________________ */
 
 @media only screen and (max-width: 600px) {
  html{
   font-size:9px ;
   font-family: 'Otomanopee One', sans-serif;  }
-}
 
+  .Header{
+    position:absolute;
+    left:1rem;
+    z-index: 3;
+  }
+}
+@media only screen and (max-width: 800px) {
+  html{
+   font-size:9px ;
+   font-family: 'Otomanopee One', sans-serif;  }
+ 
+   .Header{
+     position:absolute;
+     left:1rem;
+     z-index: 3;
+   }
+ }
 
 @media only screen and (max-width: 400px) {
   html{
    font-size:7px ;
    font-family: 'Otomanopee One', sans-serif;  }
+
+
+   .Header{
+    position:absolute;
+    left:1rem;
+    z-index: 3;
+  }
  }

@@ -14,7 +14,14 @@ const nodes=root.descendants()
 function App() {
   return (
     <div className="App">
-      {/* <Test/> */}
+      <div className="Header">
+        <img src={process.env.PUBLIC_URL+"/images/header.svg"}></img>
+        {/* <div className="HeaderButtons">
+          <div><button className="HotNews">News</button></div>
+          <div><button className="Attributes">Flaticons</button></div>
+
+        </div> */}
+      </div>
       <div>
        <Left nodes={nodes} /></div>
       <div> <CenterSvg nodes={nodes} links={links} /></div>

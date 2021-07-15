@@ -73,7 +73,6 @@
                                     "category":"dev",
                                     "skillTag":["HTML","CSS","Javascript"],
                                     "contents":["A website for a dentist in Bharuch was my first task in this strartup","It had a peculiar request of making the website more child freindly and fully animated in a cartoonish fashion, hence a lot of Javascript was used."],
-                                    "links":"https://github.com/omegaji/NEOSMILES_DENTAL_CARE-WEBSITE-INTERNSHIP-WORK-",
                                     "duration":["May 2019","July 2019"]
                                 },
                                 {
@@ -83,7 +82,6 @@
                                     "category":"dev",
                                     "skillTag":["HTML","CSS","Javascript"],
                                     "contents":["I was assigned a simple website to create for an important customer. It contained the normal website template made from HTML,CSS and Javascript"],
-                                    "links":"https://github.com/omegaji/SPANTECH_GROUP_WEBSITE-INTERNSHIP-PROJECT-",
                                     "duration":["May 2019","July 2019"]
                                 }
                             ]
@@ -185,8 +183,7 @@
                             "name":"Bear classifier",
                             "category":"ds",
                             "skillTag":["CNN","Python","FastAI","Opencv2","BeautifulSoup","Scraping"],
-                            "contents":["A classifier model for bear made using FastAI library built on Pytorch and a dataset scraped from google images","It used transfer learning on the CIFAR dataset for a quicker and accurate model."],
-                            "links":"https://github.com/omegaji/teddy_grizzly_black-bear-classifier"
+                            "contents":["A classifier model for bear made using FastAI library built on Pytorch and a dataset scraped from google images","It used transfer learning on the CIFAR dataset for a quicker and accurate model."]
                         
                         },
                         {
@@ -196,9 +193,7 @@
                             "name":"Rss Scraper",
                             "category":"ds",
                             "skillTag":["BeautifulSoup","Scraping","Python","Feedparser","Selenium"],
-                            "contents":["First part of the project is that it will detect if the website has Feeds or Rss enabled.","The second part is to fetch all the working RSS links."],
-                            "links":"https://github.com/omegaji/RssScrape"
-                        },
+                            "contents":["First part of the project is that it will detect if the website has Feeds or Rss enabled.","The second part is to fetch all the working RSS links."]                        },
                         {
 
                             "id":"23",

@@ -10,7 +10,7 @@ export const Right=(props)=>{
     const [type,updateType]=useState("")
     const [contents,updateContents]=useState([])
     const [duration,updateDuration]=useState([])
-
+    const [bool,updateBool]=useState(false)
 
     const checkDuration=()=>{
         if(duration.length==0){
@@ -26,7 +26,7 @@ export const Right=(props)=>{
             return 
         }
         else{
-            return (<div className="Url">{url}</div>)
+            return (<div className="Url"><a href={url}>&#x1F30D;</a></div>)
         }
     }
     const checkEducationArray=()=>{
@@ -78,6 +78,13 @@ export const Right=(props)=>{
     }
     useEffect(()=>{
         Nodes.on("click",(i,d)=>{
+            if(bool==false){
+                updateBool(true)
+                let right_bar=document.getElementsByClassName("Right")[0]
+                right_bar.style.right="1rem";
+                right_bar.style.animationName="slideLeft"
+
+            }
             updateName(d.data.name)
             updateType(d.data.type)
             if(d.data.skillTag){
