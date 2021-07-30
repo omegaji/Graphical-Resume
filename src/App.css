@@ -57,7 +57,7 @@ body{
   z-index: 3;
 }
 .CenterDiv{
-  background-color: #DE9151;
+  background-color: #94B46E;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -88,9 +88,8 @@ body{
   flex-direction: column;
 
   left: 1rem;
-  background-color: #763b1dc7;
+  background-color: #558DAF;
   /* background-color: #f45a2f86; */
-  border: 5px solid #2E2E3A;
   /* max-height: 28rem; */
   height: 22rem;
   border-radius: 6px;
@@ -106,8 +105,7 @@ body{
   align-items: flex-start;
   justify-content: flex-start;
   right: -19rem;
-  background-color: #ffedc8;
-  border: 5px solid #2E2E3A;
+  background-color: #C4D6B0;
   /* height: 50%; */
   border-radius: 6px;
   width: 15rem;
@@ -169,8 +167,9 @@ body{
   width: 11rem;
   font-size: 0.8rem;
   background-color: white;
-  border-bottom:  3px solid #2E2E3A;
-  border-right:  3px solid #2E2E3A;
+  border: 2.5px solid #B6CEDD;
+  border-radius: 5px;
+  
 
 }
 
@@ -204,8 +203,8 @@ body{
 #DivTitle>p{
   position: absolute;
   font-family: 'Otomanopee One', sans-serif;
-  color: #1C1C24;
-  background-color: #BC5D2E;
+  color: white;
+  background-color: #6D9DBA;
   max-width: 10rem;
   padding: 0.2rem;
   border-radius: 6px;
@@ -213,19 +212,19 @@ body{
 }
 .Next{
   font-family: 'Work Sans', sans-serif;
-  background-color: #C6C6D2;
+  background-color: #7CA052 ;
   font-size: 1.5rem;
   border-radius: 3px;
   border:0px;
-  color:#2E2E3A;
-  border-bottom:  3px solid #2E2E3A;
-  border-right:  3px solid #2E2E3A;
+  color:white;
+  border-bottom:  3px solid #B6CEDD;
+  border-right:  3px solid #B6CEDD;
 
 
 }
 .Next:hover{
   /* background-color: ; */
-  background-color: #de9151ab;
+  background-color: #3F6A86;
 
 }
 #WorkNextCount{
@@ -236,14 +235,14 @@ body{
 }
 #Tag1{
   position:absolute;
-  background-color: #BC5D2E;
+  background-color: #94B46E;;
   padding: 0.3rem;
   z-index:1;
   top:42%;
   padding-top:0.8rem;
-  border-bottom:  3px solid #2E2E3A;
-  border-right:  3px solid #2E2E3A;
-  border-left:  3px solid #2E2E3A;
+  border-bottom:  0px solid #2E2E3A;
+  border-right:  0px solid #2E2E3A;
+  border-left:  0px solid #2E2E3A;
   border-radius: 3px;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -253,14 +252,14 @@ body{
 }
 #Tag2{
   position:absolute;
-  background-color: #BC5D2E;
+  background-color: #94B46E;;
   padding: 0.3rem;
   z-index:1;
   top:42%;
   padding-top:0.8rem;
-  border-bottom:  3px solid #2E2E3A;
-  border-right:  3px solid #2E2E3A;
-  border-left:  3px solid #2E2E3A;
+  border-bottom:  0px solid #2E2E3A;
+  border-right:  0px solid #2E2E3A;
+  border-left:  0px solid #2E2E3A;
   border-radius: 3px;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
@@ -317,7 +316,7 @@ body{
   
   .rect{
   
-  background-color:#F34213;
+  background-color:#638042 ;
   width:1.6rem;
   height:6.1rem;
   border-top-left-radius:0.3rem;
@@ -348,7 +347,7 @@ body{
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     
-    border-top: 2rem solid #F34213;
+    border-top: 2rem solid #638042 ;
   }
   .arrow-down2 {
     width: 0; 
@@ -357,7 +356,7 @@ body{
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     
-    border-top: 2rem solid #F34213;
+    border-top: 2rem solid #638042 ;
   }
 
 
@@ -381,9 +380,11 @@ body{
     position: absolute;
     top: 17rem;
     left: 3rem;
-    background-color: #BE6924;
+    background-color: #94B46E;;
     width: 14rem;
-    border: 3px solid #2E2E3A;
+    border-radius: 1rem;
+    border: 2.5px solid #B6CEDD;
+  border-radius: 5px;
     justify-content: center;
     align-items: center;
   }
@@ -392,12 +393,11 @@ body{
    position:absolute;
    bottom: 4.3rem;
 
-   background-color: #F34213;
+   background-color: #3F6A86;
    padding-left: 1rem;
    padding-right: 1rem;  
-   border:3px solid #2E2E3A;
    border-radius: 5px;
-   color: black;
+   color: white;
  }
  .QuickLinksTitle>p{
   padding: 0rem;
@@ -406,14 +406,15 @@ body{
   .QuickLinksLinks{
     display: flex;
     flex-direction: row ;
+
     
   }
   .QuickLinksLinks>div{
     margin-top:1rem;
     padding-top:0.5rem;
-    padding-left: 1.5rem;
-    padding-right:1.5rem;
-    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right:1rem;
+    padding-bottom: 1rem;
   }
   .QuickLinksLinks>div:nth-child(1)>a>i{
     color:#0a66c2;
@@ -431,7 +432,7 @@ body{
 /* Right Side Start__________________________________________________ */
 
 .Name{
-  background-color: #F34213;
+  background-color: #3F6A86;
   color: white;
   /* margin: 0; */
   padding-left: 1.1rem;
@@ -441,10 +442,10 @@ body{
   right: 1.1rem;
   font-size: 0.8rem;
   padding-right: 1.1rem;
-  border-right: 5px dashed #2E2E3A;
+  border-right: 5px dashed #7CA052;
   position: relative;
-  border-top: 5px dashed #2E2E3A;
-  border-bottom: 5px dashed #2E2E3A;
+  border-top: 5px dashed #7CA052;
+  border-bottom: 5px dashed #7CA052;
   
 }
 .beforeDuration{
@@ -454,7 +455,7 @@ body{
 }
 .Duration{
   font-size:0.8rem;
-  background-color: #763b1dc7;
+  background-color: #493736;
   color:white;
   border-radius: 7px;
   margin:0 auto;
@@ -475,7 +476,7 @@ body{
 
   padding: 0.2rem;
   margin:0.2rem;
-  background-color: #763b1dc7;
+  background-color: #493736;
   color:white;
   border-radius: 4px;
 }
@@ -491,8 +492,8 @@ body{
   margin-top: 0.8rem;
     /* background-color: #763b1dc7; */
     color: #2E2E3A;
-    border-top: 3px solid #2E2E3A;
-    border-bottom: 3px solid #2E2E3A;
+    border-top: 3px solid #3F6A86;
+    border-bottom: 3px solid #3F6A86;
 
 }
 
@@ -506,7 +507,7 @@ body{
 
 }
 .Url{
-  background-color: #763b1dc7;
+  background-color: #7CA052;
   margin-top:0.5rem;
   padding:0.3rem;
   border-radius: 4px;

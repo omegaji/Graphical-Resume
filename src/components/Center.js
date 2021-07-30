@@ -110,7 +110,7 @@ export const CenterSvg=(props)=>{
         // Nodes.attr("transform", transform).attr("r",20/transform.k);
         Nodes.attr("transform", "translate(" + transform.x + " " + transform.y + ") scale(" + transform.k + ")").attr("r",20/transform.k);
         Nodes.style("stroke-width",5/transform.k);
-        Nodes.style("stroke","black")
+        Nodes.style("stroke","#B6CEDD")
         var ll=d3.selectAll(".links")
 
         Links.attr("transform",transform).attr("stroke-width",2/transform.k).attr("marker-end", "url(#triangle)")
