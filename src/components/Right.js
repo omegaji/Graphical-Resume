@@ -30,14 +30,24 @@ export const Right=(props)=>{
         }
     }
     const checkEducationArray=()=>{
+        console.log(educationArray)
         if(educationArray.length==0){
             return
         }
         else{
             return(
                 <React.Fragment>
-                <div className="CGPA">{educationArray[0]}</div>
-                <div className="yearPassout">{educationArray[1]}</div>
+                <div className="Education">
+                    <div>
+                        <div className="EduLabels">CGPA &#x1F98B;	</div>
+                        <div >{educationArray[0]}</div>
+                    </div>
+                    <div>
+                        <div className="EduLabels">Passout &#x1F4C5;</div>
+                        <div>{educationArray[1]}</div>
+                    </div>
+                </div>
+                
                 </React.Fragment>
             )
         }
@@ -92,7 +102,7 @@ export const Right=(props)=>{
                 updateSkillTags([...d.data.skillTag])
             }
             else{
-                console.log("no they donext")
+                // console.log("no they donext")
                 updateSkillTags([])
             }
             if(d.data.type=="education"){
@@ -134,7 +144,7 @@ export const Right=(props)=>{
             {checkContents()  }
 
             <div> 
-            {checkEducationArray}
+            {checkEducationArray()}
 
 
             </div>

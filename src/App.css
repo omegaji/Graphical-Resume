@@ -213,7 +213,7 @@ body{
 }
 .Next{
   font-family: 'Work Sans', sans-serif;
-  background-color: white;
+  background-color: #C6C6D2;
   font-size: 1.5rem;
   border-radius: 3px;
   border:0px;
@@ -513,6 +513,27 @@ body{
 }
 .Url>a{
 text-decoration: none;}
+
+.Education{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Education>div{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+.Education>div>div{
+  padding: 0.5rem;
+}
+.EduLabels{
+  background-color: #DDDCD9;
+}
+
 /* Right Side End_______________________________________________________ */
 
 @media only screen and (max-width: 600px) {

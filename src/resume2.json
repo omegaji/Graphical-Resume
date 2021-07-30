@@ -15,21 +15,32 @@
             "name":"Development",
             "category":"dev",
             "type":"none",
+            "contents":["I also love to do web development projects and keep myself updated as a fullstack developer. Especially projects envolving manipulating data and displaying them in dashboards beautified with vanilla CSS.", "For example this site is made possible using React and d3js, with of course using HTML and CSS."],
             "children":[
                 {
                     
                     "type":"project",
                     "name":"projects",
                     "category":"dev",
+                    "contents":["I have created many websites using different frameworks raning from MERN Stack to pythonic Flask framework."," Click on each project to know more :D"],
                     "children":[
                         {
                             "id":"33",
                             "type":"project",
                             "name":"Indian Cuisine",
                             "category":"dev",
-                            "skillTag":["HTML","CSS","PouchDB","Javascript","React.JS","AWS Lightsail","TMUX","Express","AdobeXD","Node"],
+                            "skillTag":["HTML","CSS","PouchDB","Javascript","React.JS","AWS Lightsail","TMUX","Express","AdobeXD","Node","NoSQL"],
                             "contents":["Using the Indian cuisine Kaggle dataset I created a PouchDBERN stack website with PouchDB as the database","Its a site providing information about Indian cusisines and hosted on Amazon Lightsail, as it had a cheaper subscription. Do check the website out!"],
-                            "links":"65.2.25.110:3000"
+                            "links":"http://65.2.25.110:3000/"
+                        },
+                        {   
+
+                            "type":"project",
+                            "name":"Electric Vehicle",
+                            "category":"dev",
+                            "skillTag":["Chart.Js","Python","Flask","HTML","CSS","Javascript"],
+                            "contents":["An Electric Vehicle Parameter calculator I made in collaborations with freinds belonging to mechanical engineering.","It contains heavy calculations regarding the battery parameters and was also has a paper published"],
+                            "links":"http://www.evmotorbike.com/"
                         },
                         {
                             "id":"34",
@@ -45,7 +56,7 @@
                             "type":"project",
                             "name":"Instagram Clone",
                             "category":"dev",
-                            "skillTag":["HTML","CSS","Javascript","Node","Express","MongoDB","Node"],
+                            "skillTag":["HTML","CSS","Javascript","Node","Express","MongoDB","Node","NoSQL"],
                             "contents":["One of my first websites while doing a bootcamp, it was made with Express,Node and MongoDB with signup and login functionality"]
                         }
                     ]
@@ -56,6 +67,7 @@
                     "type":"work",
                     "name":"work experience",
                     "category":"dev",
+                    "contents":["Below child nodes are the jobs I have done as a developer and the grandchildren are the different projects I was assigned during my work experience"],
                     "children":[
                         {
 
@@ -100,7 +112,7 @@
                                     "type":"work",
                                     "name":"Chrome Extension",
                                     "category":"dev",
-                                    "skillTag":["HTML","CSS","D3.js","Javascript","Neo4J","Chrome Dev","Cypher","AdobeXD","MongoDB"],
+                                    "skillTag":["HTML","CSS","D3.js","Javascript","Neo4J","Chrome Dev","Cypher","AdobeXD","MongoDB","NoSQL"],
                                     "contents":["A chrome extension for tracking history and highlighted text in tabs.","Using a graph database Neo4j I stored the tabs in parent and child data structure which would then be used to visualise in a tree like structure using D3.js"],
                                     "duration":["August 2020","May 2021"]
                                 }
@@ -114,6 +126,7 @@
         {  
             "name":"Data Science",
             "category":"ds",
+            "contents":["Every CS students has to sink their teeth in the world of Data Science.....Well, I took a dive!","Below are the projects and the work experience I have in this domain which involves a variety of projects ranging from scraping to modelling and hosting!"],
             "type":"none",
             "children":[
                 {
@@ -234,6 +247,8 @@
                     "type":"work",
                     "name":"work experience",
                     "category":"ds",
+                    "contents":["Below child nodes are the jobs I have done as a Data Scientist and the grandchildren are the different projects I was assigned during my work experience"],
+
                     "children":[
                         {
 
