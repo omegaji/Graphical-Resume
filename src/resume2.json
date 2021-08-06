@@ -350,7 +350,7 @@
                                     "type":"work",
                                     "name":"Flow Project",
                                     "category":"ds",
-                                    "skillTag":["Python","Superset","MySQL","Scraping","BeautifulSoup","Selenium",""],
+                                    "skillTag":["Python","Superset","MySQL","Scraping","BeautifulSoup","Selenium"],
                                     "contents":["Scraping fianancial data from various sites and creating a pipeline using Apache superset with a team member","It offered full-blown interactive EDA and an automated monthly scraping componenet so that the financial data would stay updated"],
                                     "duration":["August 2020","May 2021"]
                                 }
