@@ -31,7 +31,7 @@
                             "category":"dev",
                             "skillTag":["HTML","CSS","PouchDB","Javascript","React.JS","AWS Lightsail","TMUX","Express","AdobeXD","Node","NoSQL"],
                             "contents":["Using the Indian cuisine Kaggle dataset I created a PouchDBERN stack website with PouchDB as the database","Its a site providing information about Indian cusisines and hosted on Amazon Lightsail, as it had a cheaper subscription. Do check the website out!"],
-                            "links":"http://65.2.25.110:3000/"
+                            "links":"http://www.indiancuisineskaggle.com/"
                         },
                         {   
 
