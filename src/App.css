@@ -526,6 +526,8 @@ text-decoration: none;}
   flex-direction: row;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  width: 100%;
+  justify-content: left;
 
 }
 .Education>div>div{

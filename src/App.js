@@ -1,9 +1,8 @@
-import './App.css';
+  import './App.css';
 import {CenterSvg} from './components/Center'
 import { Left } from './components/Left';
 import { Right } from './components/Right';
 import { Test } from './components/Test';
-// import nodes from "./resume.json"
 import links from "./resume2.json"
 import * as d3 from 'd3'
 

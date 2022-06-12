@@ -43,8 +43,12 @@ export const Right=(props)=>{
                         <div >{educationArray[0]}</div>
                     </div>
                     <div>
+                        <div className="EduLabels">Major &#x1F393;	</div>
+                        <div >{educationArray[1]}</div>
+                    </div>
+                    <div>
                         <div className="EduLabels">Passout &#x1F4C5;</div>
-                        <div>{educationArray[1]}</div>
+                        <div>{educationArray[2]}</div>
                     </div>
                 </div>
                 
@@ -106,7 +110,7 @@ export const Right=(props)=>{
                 updateSkillTags([])
             }
             if(d.data.type=="education"){
-                updateEducationArray([d.data.cgpa,d.data.yearPassout])
+                updateEducationArray([d.data.cgpa,d.data.major,d.data.yearPassout])
             }
             else{
                 updateEducationArray([])

@@ -1,14 +1,25 @@
 { 
     "name":"om",
     "type":"user",
-    "contents":["Aspiring wizard in Web Development and Data Science. I like to call myself a DataDev :D"],
+    "contents":["Aspiring wizard in Software Development and Data Science. I like to call myself a DataDev :D"],
     "links":"https://github.com/omegaji",
     "children":[
         {"id":"3",
             "name":"Vellore Institute of Technology",
             "type":"education",
+            "major":"IT",
             "cgpa":"8.82",
-            "yearPassout":"2021"
+            "yearPassout":"2021",
+            "children":[
+                {
+                    "id":"3",
+                    "name":"SUNY Buffalo",
+                    "type":"education",
+                    "major":"Data Science",
+                    "cgpa":" TBA",
+                    "yearPassout":"2023"
+                }
+            ]
             }
         ,
         { 
@@ -117,6 +128,25 @@
                                     "duration":["August 2020","May 2021"]
                                 }
                             ]
+                        },
+                        {
+                            "id":"32",
+                            "type":"work",
+                            "name":"IQVIA",
+                            "category":"dev",
+                            "duration":["May 2022","August 2022"],
+                            "children":[
+                                {
+                                    "id":"32",
+                                    "type":"work",
+                                    "name":"Deployment Dashboard",
+                                    "category":"dev",
+                                    "skillTag":["HTML","CSS","React.JS","Javascript","Redux","Docker","Flask","Python","PostgresSQL","Node","Kubernetes"],
+                                    "contents":["A dashboard managing kubernetes deployments","Created backend API in flask, while frontend was responsive and reactive (pun intended) using React-Redux"],
+                                    "duration":["May 2022","August 2022"]
+                                }
+                            ]
+
                         }
                     ]
                 }
