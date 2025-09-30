@@ -57,7 +57,7 @@ body{
   z-index: 3;
 }
 .CenterDiv{
-  background-color: #94B46E;
+  background-color: #f5f6f3;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -105,7 +105,7 @@ body{
   align-items: flex-start;
   justify-content: flex-start;
   right: -19rem;
-  background-color: #C4D6B0;
+  background-color: #558DAF;
   /* height: 50%; */
   border-radius: 6px;
   width: 15rem;
@@ -212,7 +212,7 @@ body{
 }
 .Next{
   font-family: 'Work Sans', sans-serif;
-  background-color: #7CA052 ;
+  background-color: #0f0f0f;
   font-size: 1.5rem;
   border-radius: 3px;
   border:0px;
@@ -235,7 +235,7 @@ body{
 }
 #Tag1{
   position:absolute;
-  background-color: #94B46E;;
+  background-color: #0f0f0f;;
   padding: 0.3rem;
   z-index:1;
   top:42%;
@@ -252,7 +252,7 @@ body{
 }
 #Tag2{
   position:absolute;
-  background-color: #94B46E;;
+  background-color: #0f0f0f;
   padding: 0.3rem;
   z-index:1;
   top:42%;
@@ -312,11 +312,12 @@ body{
   
     /* Firefox */
     -moz-transform: rotate(-90deg);
+    color:white;
   }
   
   .rect{
   
-  background-color:#638042 ;
+  background-color:#0f0f0f ;
   width:1.6rem;
   height:6.1rem;
   border-top-left-radius:0.3rem;
@@ -347,7 +348,7 @@ body{
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     
-    border-top: 2rem solid #638042 ;
+    border-top: 2rem solid #0f0f0f ;
   }
   .arrow-down2 {
     width: 0; 
@@ -356,7 +357,7 @@ body{
     border-left: 0.4rem solid transparent;
     border-right: 0.4rem solid transparent;
     
-    border-top: 2rem solid #638042 ;
+    border-top: 2rem solid #0f0f0f ;
   }
 
 
@@ -380,7 +381,7 @@ body{
     position: absolute;
     top: 17rem;
     left: 3rem;
-    background-color: #94B46E;;
+    background-color: #f5f6f3;
     width: 14rem;
     border-radius: 1rem;
     border: 2.5px solid #B6CEDD;
@@ -432,7 +433,7 @@ body{
 /* Right Side Start__________________________________________________ */
 
 .Name{
-  background-color: #3F6A86;
+  background-color: #0f0f0f;
   color: white;
   /* margin: 0; */
   padding-left: 1.1rem;
@@ -442,11 +443,8 @@ body{
   right: 1.1rem;
   font-size: 0.8rem;
   padding-right: 1.1rem;
-  border-right: 5px dashed #7CA052;
   position: relative;
-  border-top: 5px dashed #7CA052;
-  border-bottom: 5px dashed #7CA052;
-  
+  border-radius: 0.3rem;  
 }
 .beforeDuration{
   width: 100%;
@@ -491,9 +489,9 @@ body{
 .ContentsBoxTitle{
   margin-top: 0.8rem;
     /* background-color: #763b1dc7; */
-    color: #2E2E3A;
-    border-top: 3px solid #3F6A86;
-    border-bottom: 3px solid #3F6A86;
+    color: white;
+    /* border-top: 3px solid #0f0f0f;
+    border-bottom: 3px solid #0f0f0f; */
 
 }
 
@@ -507,7 +505,7 @@ body{
 
 }
 .Url{
-  background-color: #7CA052;
+  background-color: #0f0f0f;
   margin-top:0.5rem;
   padding:0.3rem;
   border-radius: 4px;

@@ -28,7 +28,6 @@ export const SearchWork=(props)=>{
     const [searchIndex,updateSearchIndex]=useState(0)
     const [inputVal,setInputVal]=useState("")
     const NextCount = ()=>{
-        console.log("IN NEXT COUNTTTTTTTTTTTTTTT")
         let element=document.getElementById("WorkNextCount")
 
         if(searchArr.length==0){
@@ -39,7 +38,6 @@ export const SearchWork=(props)=>{
         }
         else{
 
-            console.log("IN SECOND IFFFFFFFFFFFFf")
             element.style.opacity=1;
             return true;
 

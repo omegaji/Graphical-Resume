@@ -30,18 +30,15 @@ export const SearchSkill=(props)=>{
     const [searchIndex,updateSearchIndex]=useState(0)
     const [inputVal,setInputVal]=useState("")
     const NextCount = ()=>{
-        console.log("IN NEXT COUNTTTTTTTTTTTTTTT")
         let element=document.getElementById("SkillNextCount")
 
         if(searchArr.length==0){
-            console.log(searchArr)
-            console.log("IN FIRST IF")
+    
             element.style.opacity=0
             return false
         }
         else{
 
-            console.log("IN SECOND IFFFFFFFFFFFFf")
             element.style.opacity=1
             return true;
 
